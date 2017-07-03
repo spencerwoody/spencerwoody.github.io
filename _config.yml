@@ -24,7 +24,7 @@ github_username:  spencerwoody
 
 # Build settings
 markdown: kramdown
-theme: researcher
+theme: minima
 gems:
   - jekyll-feed
 
