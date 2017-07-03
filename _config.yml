@@ -16,9 +16,7 @@
 title: Spencer Woody
 email: spencer.woody@utexas.edu
 description: #> # this means to ignore newlines until "baseurl:"
-  Statistics PhD student 
-  
-  University of Texas at Austin
+  Statistics PhD student, University of Texas at Austin
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spencerwoody.github.io" # the base hostname & protocol for your site
 twitter_username: spencerwoody 
@@ -26,7 +24,7 @@ github_username:  spencerwoody
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: researcher
 gems:
   - jekyll-feed
 
