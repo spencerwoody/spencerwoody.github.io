@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "My first post"
 date:   2017-07-03 14:50:18 -0500
 categories: jekyll update
 ---
@@ -16,6 +16,17 @@ def print_hi(name)
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+{% highlight r %}
+myfun <- function(x, y) {
+	return(x + y)
+}
+
+if (TRUE) {
+	print("Hello, world!")
+}
+# some useless code
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

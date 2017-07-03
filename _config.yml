@@ -16,7 +16,7 @@
 title: Spencer Woody
 email: spencer.woody@utexas.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Spencer Woody. I'm a second-year statistics PhD student at the University of Texas at Austin. My research interests include high throughput 'omics data, geostatistics, and nonparametric Bayesian modeling. 
+  I'm a second-year statistics PhD student at the University of Texas at Austin. My research interests include high throughput 'omics data, geostatistics, and Bayesian nonparametric modeling. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spencerwoody.github.io" # the base hostname & protocol for your site
 twitter_username: spencerwoody 
