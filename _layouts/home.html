@@ -8,12 +8,14 @@ layout: default
 
   <h1 class="page-heading">About Me</h1>
   
+  <p> Hi, I'm Spencer Woody. I am a second year PhD student in statistics at the University of Texas at Austin. My research interests are in Bayesian nonparametrics, bioinformatics, and spatial modeling. I also serve as a research assistant in the lab of Dr. Livia Eberlin in the Department of Chemistry. </p>
+  
   <h1 class="page-heading">Posts</h1>
   
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
