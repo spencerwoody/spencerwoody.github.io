@@ -255,7 +255,57 @@ git submodule update --init --recursive
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+library(dplyr)
+## 
+## Attaching package: &amp;#39;dplyr&amp;#39;
+## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag
+## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union
+library(ggmap)
+## Loading required package: ggplot2
+## Google Maps API Terms of Service: http://developers.google.com/maps/terms.
+## Please cite ggmap if you use it: see citation(&amp;quot;ggmap&amp;quot;) for details.
+library(ggplot2)
+
+nola &amp;lt;- read.csv(&amp;quot;data/HGP/nola.csv&amp;quot;)
+
+# Set bounds of map
+minlat &amp;lt;- min(nola$lat)
+minlon &amp;lt;- min(nola$lon)
+maxlat &amp;lt;- max(nola$lat)
+maxlon &amp;lt;- max(nola$lon)
+
+# Create background for map image
+NOLAmap &amp;lt;- get_map(
+    location = c(minlon, minlat, maxlon, maxlat), 
+    zoom = 13, 
+    col = &amp;quot;bw&amp;quot;)
+## Warning: bounding box given to google - spatial extent only approximate.
+## converting bounding box to center/zoom specification. (experimental)
+## Source : https://maps.googleapis.com/maps/api/staticmap?center=29.95052,-90.083&amp;amp;zoom=13&amp;amp;size=640x640&amp;amp;scale=2&amp;amp;maptype=terrain&amp;amp;language=en-EN
+
+storemap &amp;lt;- ggmap(NOLAmap) + 
+    geom_point(
+        data = nola, 
+        aes(x = long, y = lat, col = factor(street)), 
+        alpha = 0.5) +
+    scale_colour_brewer(
+        name = &amp;quot;&amp;quot;,
+        labels = c(&amp;quot;St Charles Ave&amp;quot;, &amp;quot;S Carrollton Ave&amp;quot;, &amp;quot;St Claude Ave&amp;quot;),
+        palette = &amp;quot;Set1&amp;quot;) +
+    ggtitle(&amp;quot;Location of all stores in dataset&amp;quot;) +
+    theme(
+        plot.title = element_text(hjust = 0.5),
+        legend.position=&amp;quot;bottom&amp;quot;)
+
+
+  
+
+summary(cars)
 ##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -287,6 +337,13 @@ pie(
 &lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;storemap&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:storemap&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/storemap-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: A fancy pie chart.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
