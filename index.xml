@@ -11,29 +11,11 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Spatial logit model</title>
-      <link>/project/spatial-logit/</link>
-      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      <title>Hello, world</title>
+      <link>/post/2018-01-28-hello-world/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 -0600</pubDate>
       
-      <guid>/project/spatial-logit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hierarchical nonparametric regression</title>
-      <link>/project/hgp/</link>
-      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/hgp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/post/getting-started/</guid>
+      <guid>/post/2018-01-28-hello-world/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the latest demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes. Then head on over to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start guide&lt;/a&gt; or take a look at the &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;
@@ -214,6 +196,24 @@ git submodule update --init --recursive
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Spatial logit model</title>
+      <link>/project/spatial-logit/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/spatial-logit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hierarchical nonparametric regression</title>
+      <link>/project/hgp/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/hgp/</guid>
+      <description></description>
     </item>
     
     <item>
