@@ -124,7 +124,7 @@
     
     <url>
     
-      <loc>/tags/meta/</loc>
+      <loc>/categories/meta/</loc>
       <lastmod>2018-01-28T00:00:00-06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -134,7 +134,7 @@
     
     <url>
     
-      <loc>/categories/meta/</loc>
+      <loc>/tags/meta/</loc>
       <lastmod>2018-01-28T00:00:00-06:00</lastmod>
       <priority>0</priority>
     </url>

@@ -66,23 +66,37 @@ Figure 1: A fancy &lt;code&gt;ggmap&lt;/code&gt;
       <guid>/post/hgp/</guid>
       <description>&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using &lt;code&gt;ggplot2&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Based on a paper by &lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252&#34;&gt;Hensman, Lawrence, and Rattray&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/hgp_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;div id=&#34;read-in-the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Read in the data&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+library(forcats)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+
+drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;)
+
+drosophila &amp;lt;- drosophila %&amp;gt;%
+  mutate(gene = fct_inorder(gene))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;plot-the-data&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Plot the data&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;allgenes &amp;lt;- drosophila %&amp;gt;% 
+    ggplot(aes(time, log2exp)) +
+    geom_point(aes(col = group, pch = replicate)) +
+    facet_wrap(~gene) +
+    labs(title = &amp;quot;Expression Profiles for all Genes&amp;quot;,
+         x = &amp;quot;Time&amp;quot;,
+         y = &amp;quot;log2-Normalized gene expression&amp;quot;) + 
+    scale_colour_brewer(palette = &amp;quot;Dark2&amp;quot;) +
+    scale_x_continuous(breaks = seq(0, 12, by = 2)) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:facet1&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:facet1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/hgp_files/figure-html/facet1-1.png&#34; alt=&#34;faceted plot of all genes&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
+Figure 1: faceted plot of all genes
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

@@ -28,9 +28,9 @@
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2
-drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;)  Including Plots You can also embed plots. See Figure 1 for example:
-par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;), col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;), init.angle = -50, border = NA )  Figure 1: A fancy pie chart.</description>
+      <description>Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+Based on a paper by Hensman, Lawrence, and Rattray.
+ Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;) drosophila &amp;lt;- drosophila %&amp;gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &amp;lt;- drosophila %&amp;gt;% ggplot(aes(time, log2exp)) + geom_point(aes(col = group, pch = replicate)) + facet_wrap(~gene) + labs(title = &amp;quot;Expression Profiles for all Genes&amp;quot;, x = &amp;quot;Time&amp;quot;, y = &amp;quot;log2-Normalized gene expression&amp;quot;) + scale_colour_brewer(palette = &amp;quot;Dark2&amp;quot;) + scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.</description>
     </item>
     
     <item>

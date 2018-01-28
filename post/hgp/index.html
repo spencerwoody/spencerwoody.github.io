@@ -17,9 +17,9 @@
       
     
   
-  <meta name="description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2
-drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;)  Including Plots You can also embed plots. See Figure 1 for example:
-par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;), col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;), init.angle = -50, border = NA )  Figure 1: A fancy pie chart.">
+  <meta name="description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+Based on a paper by Hensman, Lawrence, and Rattray.
+ Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;) drosophila &lt;- drosophila %&gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &lt;- drosophila %&gt;% ggplot(aes(time, log2exp)) &#43; geom_point(aes(col = group, pch = replicate)) &#43; facet_wrap(~gene) &#43; labs(title = &quot;Expression Profiles for all Genes&quot;, x = &quot;Time&quot;, y = &quot;log2-Normalized gene expression&quot;) &#43; scale_colour_brewer(palette = &quot;Dark2&quot;) &#43; scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/hgp/">
@@ -81,9 +81,9 @@ par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&#39;Sky&#39;, &#39;Sunny side o
   <meta property="og:site_name" content="Spencer Woody">
   <meta property="og:url" content="/post/hgp/">
   <meta property="og:title" content="Hierarchical nonparametric regression | Spencer Woody">
-  <meta property="og:description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2
-drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;)  Including Plots You can also embed plots. See Figure 1 for example:
-par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;), col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;), init.angle = -50, border = NA )  Figure 1: A fancy pie chart.">
+  <meta property="og:description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+Based on a paper by Hensman, Lawrence, and Rattray.
+ Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;) drosophila &lt;- drosophila %&gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &lt;- drosophila %&gt;% ggplot(aes(time, log2exp)) &#43; geom_point(aes(col = group, pch = replicate)) &#43; facet_wrap(~gene) &#43; labs(title = &quot;Expression Profiles for all Genes&quot;, x = &quot;Time&quot;, y = &quot;log2-Normalized gene expression&quot;) &#43; scale_colour_brewer(palette = &quot;Dark2&quot;) &#43; scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-01-30T00:00:00&#43;00:00">
@@ -305,23 +305,37 @@ par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&#39;Sky&#39;, &#39;Sunny side o
     <div class="article-style" itemprop="articleBody">
       <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using <code>ggplot2</code></p>
-<pre class="r"><code>drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;)</code></pre>
+<p>Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using <code>ggplot2</code>.</p>
+<p>Based on a paper by <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252">Hensman, Lawrence, and Rattray</a>.</p>
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="/post/hgp_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<div id="read-in-the-data" class="section level2">
+<h2>Read in the data</h2>
+<pre class="r"><code>library(dplyr)
+library(forcats)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+
+drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;)
+
+drosophila &lt;- drosophila %&gt;%
+  mutate(gene = fct_inorder(gene))</code></pre>
+</div>
+<div id="plot-the-data" class="section level1">
+<h1>Plot the data</h1>
+<pre class="r"><code>allgenes &lt;- drosophila %&gt;% 
+    ggplot(aes(time, log2exp)) +
+    geom_point(aes(col = group, pch = replicate)) +
+    facet_wrap(~gene) +
+    labs(title = &quot;Expression Profiles for all Genes&quot;,
+         x = &quot;Time&quot;,
+         y = &quot;log2-Normalized gene expression&quot;) + 
+    scale_colour_brewer(palette = &quot;Dark2&quot;) +
+    scale_x_continuous(breaks = seq(0, 12, by = 2)) </code></pre>
+<p>You can also embed plots. See Figure <a href="#fig:facet1">1</a> for example:</p>
+<div class="figure"><span id="fig:facet1"></span>
+<img src="/post/hgp_files/figure-html/facet1-1.png" alt="faceted plot of all genes" width="672" />
 <p class="caption">
-Figure 1: A fancy pie chart.
+Figure 1: faceted plot of all genes
 </p>
 </div>
 </div>
