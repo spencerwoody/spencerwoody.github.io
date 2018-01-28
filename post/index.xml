@@ -18,9 +18,8 @@
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/spatial-logit/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <description>Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
+ Read in the data library(dplyr) library(ggplot2) theme_set(theme_bw(base_size = 12)) library(ggmap) nola &amp;lt;- read.csv(&amp;quot;data/nola.csv&amp;quot;) NOLAmap &amp;lt;- get_map( location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), zoom = 13, col = &amp;quot;bw&amp;quot;) storemap &amp;lt;- ggmap(NOLAmap) + geom_point(data = nola, aes(x = lon, y = lat, col = factor(street)), alpha = 0.</description>
     </item>
     
     <item>
@@ -29,9 +28,9 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <description>Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2
+drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;)  Including Plots You can also embed plots. See Figure 1 for example:
+par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;), col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;), init.angle = -50, border = NA )  Figure 1: A fancy pie chart.</description>
     </item>
     
     <item>
@@ -51,8 +50,8 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>/post/-my-favorite-things/</guid>
       <description>Basically a site where I collect a bunch of links I&amp;rsquo;ve found useful over the past in my work in statistics / data science. &amp;ldquo;If you have an idea, write it down.&amp;rdquo;
-Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks etc. Books are nice, especially if they&amp;rsquo;re not made of paper 😄
- The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
+To do: add style guide&amp;hellip; emoji cheatsheet maybe header image too?
+Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks etc. Books are nice, especially if they&amp;rsquo;re not made of paper 😄</description>
     </item>
     
   </channel>
