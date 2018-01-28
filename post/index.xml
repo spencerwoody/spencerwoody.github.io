@@ -50,8 +50,9 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Sun, 28 Aug 2016 00:00:00 -0500</pubDate>
       
       <guid>/post/-my-favorite-things/</guid>
-      <description> Online learning resources  list, item 1 list, item 2 list, item 3  Textbooks Books are nice, especially if they&amp;rsquo;re not made of paper 😄
- list, item 1 list, item 2 list, item 3  Stuff for ggplot2 </description>
+      <description>Basically a site where I collect a bunch of links I&amp;rsquo;ve found useful over the past in my work in statistics / data science. &amp;ldquo;If you have an idea, write it down.&amp;rdquo;
+Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks etc. Books are nice, especially if they&amp;rsquo;re not made of paper 😄
+ The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
     </item>
     
   </channel>

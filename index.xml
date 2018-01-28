@@ -146,25 +146,60 @@ Figure 1: A fancy pie chart.
       <guid>/post/-my-favorite-things/</guid>
       <description>
 
+&lt;p&gt;Basically a site where I collect a bunch of links I&amp;rsquo;ve found useful over the past in my work in statistics / data science. &amp;ldquo;If you have an idea, write it down.&amp;rdquo;&lt;/p&gt;
+
 &lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources&lt;/h2&gt;
 
+&lt;h3 id=&#34;the-holy-trinity-of-books-written-by-hadley-wickham&#34;&gt;The holy trinity of books written by Hadley Wickham&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;list, item 1&lt;/li&gt;
-&lt;li&gt;list, item 2&lt;/li&gt;
-&lt;li&gt;list, item 3&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz&#34; target=&#34;_blank&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz&#34; target=&#34;_blank&#34;&gt;R Packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz&#34; target=&#34;_blank&#34;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks&lt;/h2&gt;
+&lt;h2 id=&#34;textbooks-etc&#34;&gt;Textbooks etc.&lt;/h2&gt;
 
 &lt;p&gt;Books are nice, especially if they&amp;rsquo;re not made of paper 😄&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;list, item 1&lt;/li&gt;
-&lt;li&gt;list, item 2&lt;/li&gt;
-&lt;li&gt;list, item 3&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/Papers/ESLII.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Elements of Statistical Learning&lt;/em&gt; by Hastie, Tibshirani, and Friedman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Bayesian Choice&lt;/em&gt; by Christian Robert&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;stuff-for-ggplot2&#34;&gt;Stuff for &lt;code&gt;ggplot2&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;reference-for-ggplot2-visualization-in-r&#34;&gt;Reference for &lt;code&gt;ggplot2&lt;/code&gt; &amp;amp; visualization in R 📈&lt;/h2&gt;
+
+&lt;p&gt;I recommend to every R user, no matter their skill level, to take the plunge into using only &lt;code&gt;ggplot2&lt;/code&gt; for producing visualizations in R. Yes, there&amp;rsquo;s a learning curve, but in my opinion, once you learn the &amp;ldquo;grammar&amp;rdquo; behind it, you can make plots much more quickly because of the much greater consistency.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz/data-visualisation.html&#34; target=&#34;_blank&#34;&gt;R for Data Science, Chapter 3&lt;/a&gt;: A good primer for begineers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html&#34; target=&#34;_blank&#34;&gt;Top 50 ggplot2 Visualizations&lt;/a&gt;: A great reference for producing a wide variety of data visualizations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;viridis&lt;/code&gt; package&lt;/a&gt;: &amp;ldquo;Use the color scales in this package to make plots that are pretty, better represent your data, easier to read by those with colorblindness, and print well in grey scale&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;reference-for-rcpp-and-rcpparmadillo-a-name-rcpp-a&#34;&gt;Reference for &lt;code&gt;Rcpp&lt;/code&gt; and &lt;code&gt;RcppArmadillo&lt;/code&gt; &lt;a name=&#34;rcpp&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Man, I &lt;em&gt;really&lt;/em&gt; need to build this list&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;blogs-and-feeds-i-follow-a-name-blogs-a&#34;&gt;Blogs and feeds I follow &lt;a name=&#34;blogs&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#rstats on twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/hadleywickham&#34; target=&#34;_blank&#34;&gt;Hadley Wickham&amp;rsquo;s twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://andrewgelman.com&#34; target=&#34;_blank&#34;&gt;Andrew Gelman&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://errorstatistics.com&#34; target=&#34;_blank&#34;&gt;Deborah Mayo&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/reference/progress_estimated.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;dplyr::progress_estimated&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gallery.rcpp.org/articles/using-rcppprogress/&#34; target=&#34;_blank&#34;&gt;Progress bars in &lt;code&gt;Rcpp&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;for-fun&#34;&gt;For fun&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YHVarQbNAwU&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;My Favorite Things&amp;rdquo; by John Coltrane&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
