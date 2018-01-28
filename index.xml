@@ -42,7 +42,7 @@ storemap &amp;lt;- ggmap(NOLAmap) +
                                  &amp;quot;St Claude Ave&amp;quot;),
                       palette = &amp;quot;Set1&amp;quot;) +
   labs(title = &amp;quot;Location of all stores in dataset&amp;quot;) + 
-  theme(plot.title = element_text(hjust = 0.5), legend.position=&amp;quot;bottom&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+  theme(legend.position=&amp;quot;bottom&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;plot-the-store-locations&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Plot the store locations&lt;/h2&gt;
@@ -111,18 +111,33 @@ Figure 1: faceted plot of all genes
       <guid>/post/2018-01-28-hello-world/</guid>
       <description>
 
-&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;Hi, I&amp;rsquo;m Spencer. Welcome to my personal website. This is my first time creating a site like this, and I&amp;rsquo;ve been thinking about doing this sort of thing for a while now. I was finally convinced to pull the trigger after reading &lt;a href=&#34;https://www.johnmackintosh.com/2017-12-30-time-to-shine/&#34; target=&#34;_blank&#34;&gt;this blog post&lt;/a&gt; by John MacKintosh, so it became something of a News Years resolution for me. It took some time to get all this up and running, but I believe it will turn out to be a good investment.&lt;/p&gt;
 
-&lt;p&gt;Why did I want to publish th&lt;/p&gt;
+&lt;p&gt;This first post is meant to be a mission statement for this site, describing my intent for this project, outside of having an online CV for myself. Here are three main goals I&amp;rsquo;ve set for myself.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Online resume; if you have no website, you don&amp;rsquo;t exist&lt;/li&gt;
-&lt;li&gt;Record learning process for sake of posterity&lt;/li&gt;
-&lt;li&gt;Blog stuff so you don&amp;rsquo;t have to explain things multiple times&lt;/li&gt;
-&lt;li&gt;Links for other people&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;1-create-an-online-portfolio-of-data-analyses-code-visualizations-etc&#34;&gt;1. Create an online portfolio of data analyses, code, visualizations, etc.&lt;/h2&gt;
 
-&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve done a lot of work for class and on my own that I&amp;rsquo;m pretty proud of and is suitable to display, but most of it resides either only on my laptop or in a GitHub repository. This brings to mind the old saying about a tree falling in the woods with no one around to here it. So I plan on using this platform as a way to display these accomplishments for public consumption.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-record-my-learning-process-for-the-sake-of-posterity&#34;&gt;2. Record my learning process for the sake of posterity&lt;/h2&gt;
+
+&lt;p&gt;Ever since I started my PhD program, I&amp;rsquo;ve learned a great deal about R, C++, LaTeX, using GitHub, project management, and statistical modeling, just to name a few topics. This is all valuable knowledge of course. Similar to the last point, there&amp;rsquo;s little sense in having this knowledge reside only in my head. If I record particularly useful tips, tricks, commands, workflows, etc., then it is that much easier for me to look back on, and even better, to share with others.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, I collaborate a lot with my colleagues within my department, and I find myself repeating a lot of what I tell others. And as &lt;a href=&#34;http://varianceexplained.org&#34; target=&#34;_blank&#34;&gt;David Robinson&lt;/a&gt; put it so well:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;When you’ve written the same code 3 times, write a function&lt;br&gt;&lt;br&gt;When you’ve given the same in-person advice 3 times, write a blog post&lt;/p&gt;&amp;mdash; David Robinson (@drob) &lt;a href=&#34;https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw&#34;&gt;November 9, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-improve-my-writing-skills&#34;&gt;3. Improve my writing skills&lt;/h2&gt;
+
+&lt;p&gt;The older I get and the more I learn, the more I realized the importance of good writing. Whether it&amp;rsquo;s in business or academia, the ability to express your thoughts and opinions in a clear and understandable way is invaluable. Now, I consider myself a decent writer. I can whip together a pretty good essay or policy memo when needed. I even maintain a journal for personal use. But the biggest challenge for me is writing in a time-efficient way. I don&amp;rsquo;t even want to admit how long this relatively short post has taken me to write. I&amp;rsquo;ll need to write a lot in the coming years as I progress through my PhD program, and I figure that the only way to improve my skills as a writer is to write more, and write often.&lt;/p&gt;
+
+&lt;h2 id=&#34;that-s-it-for-now&#34;&gt;That&amp;rsquo;s it for now&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s hoping for a fruitful career in blogging.&lt;/p&gt;
+
+&lt;h3 id=&#34;appendix-how-i-made-this-site&#34;&gt;Appendix: how I made this site&lt;/h3&gt;
+
+&lt;p&gt;This site is made within &lt;a href=&#34;http://rstudio.com/&#34; target=&#34;_blank&#34;&gt;RStudio&lt;/a&gt; using the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; package by Yihui Xie. The underlying framework is &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, and I used the &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34; target=&#34;_blank&#34;&gt;Academic theme&lt;/a&gt; by George Cushen. Go ahead and give it a try. 😉&lt;/p&gt;
 </description>
     </item>
     
@@ -143,9 +158,7 @@ Figure 1: faceted plot of all genes
       <guid>/post/-my-favorite-things/</guid>
       <description>
 
-&lt;p&gt;Basically a site where I collect a bunch of links I&amp;rsquo;ve found useful over the past in my work in statistics / data science. &amp;ldquo;If you have an idea, write it down.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;To do: add style guide&amp;hellip; emoji cheatsheet maybe header image too?&lt;/p&gt;
+&lt;p&gt;Basically a collection of links I&amp;rsquo;ve found useful during my past work in statistics and data science. Because bookmark folders are so passé.&lt;/p&gt;
 
 &lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources&lt;/h2&gt;
 
@@ -157,9 +170,7 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz&#34; target=&#34;_blank&#34;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;textbooks-etc&#34;&gt;Textbooks etc.&lt;/h2&gt;
-
-&lt;p&gt;Books are nice, especially if they&amp;rsquo;re not made of paper 😄&lt;/p&gt;
+&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/Papers/ESLII.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Elements of Statistical Learning&lt;/em&gt; by Hastie, Tibshirani, and Friedman&lt;/a&gt;&lt;/li&gt;
@@ -170,21 +181,47 @@ Figure 1: faceted plot of all genes
 
 &lt;p&gt;I recommend to every R user, no matter their skill level, to take the plunge into using only &lt;code&gt;ggplot2&lt;/code&gt; for producing visualizations in R. Yes, there&amp;rsquo;s a learning curve, but in my opinion, once you learn the &amp;ldquo;grammar&amp;rdquo; behind it, you can make plots much more quickly because of the much greater consistency.&lt;/p&gt;
 
+&lt;h3 id=&#34;ggplot2&#34;&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/h3&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz/data-visualisation.html&#34; target=&#34;_blank&#34;&gt;R for Data Science, Chapter 3&lt;/a&gt;: A good primer for begineers&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html&#34; target=&#34;_blank&#34;&gt;Top 50 ggplot2 Visualizations&lt;/a&gt;: A great reference for producing a wide variety of data visualizations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://socviz.co&#34; target=&#34;_blank&#34;&gt;Data Visualization: A practical introduction, by Kieran Healy&lt;/a&gt;: A good walkthrough of the &amp;ldquo;why&amp;rdquo; behind the grammar of graphics, instead of just the &amp;ldquo;how&amp;rdquo; (I still haven&amp;rsquo;t come across a good explanation of &lt;code&gt;ggplot2&lt;/code&gt;&amp;rsquo;s default use of a grey background, however&amp;hellip;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R&lt;/h3&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;viridis&lt;/code&gt; package&lt;/a&gt;: &amp;ldquo;Use the color scales in this package to make plots that are pretty, better represent your data, easier to read by those with colorblindness, and print well in grey scale&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;reference-for-rcpp-and-rcpparmadillo-a-name-rcpp-a&#34;&gt;Reference for &lt;code&gt;Rcpp&lt;/code&gt; and &lt;code&gt;RcppArmadillo&lt;/code&gt; &lt;a name=&#34;rcpp&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;Man, I &lt;em&gt;really&lt;/em&gt; need to build this list&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz/Rcpp.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; chapter in Advanced R&lt;/a&gt;: In my opinion, the best primer for Rcpp (even for C++ noobs)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doc.lagout.org/programmation/Multi-Language/Seamless%20R%20and%20C%20%20%20Integration%20with%20Rcpp%20%5BEddelbuettel%202013-06-04%5D.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; book by its creator Dirk Eddelbuettel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; Quick reference guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/papers/rcpp_ku_nov2013-part2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RcppArmadillo&lt;/code&gt; examples from Dirk Eddelbuettel (slideshow)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;blogs-and-feeds-i-follow-a-name-blogs-a&#34;&gt;Blogs and feeds I follow &lt;a name=&#34;blogs&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&#34;data-science&#34;&gt;Data science&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#rstats on twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/hadleywickham&#34; target=&#34;_blank&#34;&gt;Hadley Wickham&amp;rsquo;s twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org&#34; target=&#34;_blank&#34;&gt;David Robinson&amp;rsquo;s blog&amp;rsquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://andrewgelman.com&#34; target=&#34;_blank&#34;&gt;Andrew Gelman&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://errorstatistics.com&#34; target=&#34;_blank&#34;&gt;Deborah Mayo&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -192,8 +229,19 @@ Figure 1: faceted plot of all genes
 &lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/reference/progress_estimated.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;dplyr::progress_estimated&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;R styleguides. Yes, you should use one, just like you should always make your bed every morning.&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google.github.io/styleguide/Rguide.xml&#34; target=&#34;_blank&#34;&gt;Google&amp;rsquo;s R styleguide&lt;/a&gt;: Good enough for most cases.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://style.tidyverse.org&#34; target=&#34;_blank&#34;&gt;The tidyverse style guide&lt;/a&gt;: Based on Google&amp;rsquo;s styleguide, this goes a bit more in depth.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Progress bars
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/utils/html/txtProgressBar.html&#34; target=&#34;_blank&#34;&gt;Base R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/reference/progress_estimated.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;dplyr::progress_estimated()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://gallery.rcpp.org/articles/using-rcppprogress/&#34; target=&#34;_blank&#34;&gt;Progress bars in &lt;code&gt;Rcpp&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34;&gt;Use emojis for GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

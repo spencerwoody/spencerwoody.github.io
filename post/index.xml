@@ -39,8 +39,7 @@ Based on a paper by Hensman, Lawrence, and Rattray.
       <pubDate>Sun, 28 Jan 2018 00:00:00 -0600</pubDate>
       
       <guid>/post/2018-01-28-hello-world/</guid>
-      <description> Motivation Why did I want to publish th
- Online resume; if you have no website, you don&amp;rsquo;t exist Record learning process for sake of posterity Blog stuff so you don&amp;rsquo;t have to explain things multiple times Links for other people  Goals </description>
+      <description>Hi, I&amp;rsquo;m Spencer. Welcome to my personal website. This is my first time creating a site like this, and I&amp;rsquo;ve been thinking about doing this sort of thing for a while now. I was finally convinced to pull the trigger after reading this blog post by John MacKintosh, so it became something of a News Years resolution for me. It took some time to get all this up and running, but I believe it will turn out to be a good investment.</description>
     </item>
     
     <item>
@@ -49,9 +48,8 @@ Based on a paper by Hensman, Lawrence, and Rattray.
       <pubDate>Sun, 28 Aug 2016 00:00:00 -0500</pubDate>
       
       <guid>/post/-my-favorite-things/</guid>
-      <description>Basically a site where I collect a bunch of links I&amp;rsquo;ve found useful over the past in my work in statistics / data science. &amp;ldquo;If you have an idea, write it down.&amp;rdquo;
-To do: add style guide&amp;hellip; emoji cheatsheet maybe header image too?
-Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks etc. Books are nice, especially if they&amp;rsquo;re not made of paper 😄</description>
+      <description>Basically a collection of links I&amp;rsquo;ve found useful during my past work in statistics and data science. Because bookmark folders are so passé.
+Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks  The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
     </item>
     
   </channel>
