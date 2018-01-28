@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>/blog/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -23,8 +23,8 @@
     
     <url>
     
-      <loc>/projects/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>/project/spatial-logit/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -32,8 +32,8 @@
     
     <url>
     
-      <loc>/projects/example-external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>/project/hgp/</loc>
+      <lastmod>2016-04-23T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -41,7 +41,7 @@
     
     <url>
     
-      <loc>/blog/getting-started/</loc>
+      <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00-06:00</lastmod>
     </url>
     
@@ -50,8 +50,26 @@
     
     <url>
     
-      <loc>/blog/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+      <loc>/project/sds385-final/</loc>
+      <lastmod>2015-12-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/2015-07-23-r-rmarkdown/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/my-favorite-things/</loc>
+      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -68,8 +86,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>/tags/learning-resources/</loc>
+      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -78,8 +96,18 @@
     
     <url>
     
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>/tags/nonparametrics/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/omics/</loc>
+      <lastmod>2016-04-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -89,7 +117,7 @@
     <url>
     
       <loc>/tags/plot/</loc>
-      <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -98,8 +126,8 @@
     
     <url>
     
-      <loc>/projects/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>/project/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -118,7 +146,7 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -128,7 +156,7 @@
     <url>
     
       <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -138,7 +166,27 @@
     <url>
     
       <loc>/tags/regression/</loc>
-      <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/rstats/</loc>
+      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/spatial-statistics/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -160,14 +208,6 @@
       <loc>/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/projects/test_rmd/</loc>
     </url>
     
   

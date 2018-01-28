@@ -7,26 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Dec 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Spatial logit model</title>
+      <link>/project/spatial-logit/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+      <guid>/project/spatial-logit/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Hierarchical nonparametric regression</title>
+      <link>/project/hgp/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/example-external-project/</guid>
+      <guid>/project/hgp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E. coli &#39;omics</title>
+      <link>/project/sds385-final/</link>
+      <pubDate>Sat, 05 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sds385-final/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My favorite things</title>
+      <link>/project/my-favorite-things/</link>
+      <pubDate>Sat, 15 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/project/my-favorite-things/</guid>
       <description></description>
     </item>
     

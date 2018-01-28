@@ -25,14 +25,14 @@ Key features:
     </item>
     
     <item>
-      <title>Spatial logit model</title>
+      <title>Hello R Markdown</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
- library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union library(ggmap) ## Loading required package: ggplot2 ## Google Maps API Terms of Service: http://developers.</description>
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>

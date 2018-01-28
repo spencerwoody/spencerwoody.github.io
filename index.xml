@@ -11,29 +11,20 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Spatial logit model</title>
+      <link>/project/spatial-logit/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
+      <guid>/project/spatial-logit/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Hierarchical nonparametric regression</title>
+      <link>/project/hgp/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/example-external-project/</guid>
+      <guid>/project/hgp/</guid>
       <description></description>
     </item>
     
@@ -226,66 +217,25 @@ git submodule update --init --recursive
     </item>
     
     <item>
-      <title>Spatial logit model</title>
+      <title>E. coli &#39;omics</title>
+      <link>/project/sds385-final/</link>
+      <pubDate>Sat, 05 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sds385-final/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
-library(dplyr)
-## 
-## Attaching package: &amp;#39;dplyr&amp;#39;
-## The following objects are masked from &amp;#39;package:stats&amp;#39;:
-## 
-##     filter, lag
-## The following objects are masked from &amp;#39;package:base&amp;#39;:
-## 
-##     intersect, setdiff, setequal, union
-library(ggmap)
-## Loading required package: ggplot2
-## Google Maps API Terms of Service: http://developers.google.com/maps/terms.
-## Please cite ggmap if you use it: see citation(&amp;quot;ggmap&amp;quot;) for details.
-library(ggplot2)
-
-nola &amp;lt;- read.csv(&amp;quot;data/HGP/nola.csv&amp;quot;)
-
-# Set bounds of map
-minlat &amp;lt;- min(nola$lat)
-minlon &amp;lt;- min(nola$lon)
-maxlat &amp;lt;- max(nola$lat)
-maxlon &amp;lt;- max(nola$lon)
-
-# Create background for map image
-NOLAmap &amp;lt;- get_map(
-    location = c(minlon, minlat, maxlon, maxlat), 
-    zoom = 13, 
-    col = &amp;quot;bw&amp;quot;)
-## Warning: bounding box given to google - spatial extent only approximate.
-## converting bounding box to center/zoom specification. (experimental)
-## Source : https://maps.googleapis.com/maps/api/staticmap?center=29.95052,-90.083&amp;amp;zoom=13&amp;amp;size=640x640&amp;amp;scale=2&amp;amp;maptype=terrain&amp;amp;language=en-EN
-
-storemap &amp;lt;- ggmap(NOLAmap) + 
-    geom_point(
-        data = nola, 
-        aes(x = long, y = lat, col = factor(street)), 
-        alpha = 0.5) +
-    scale_colour_brewer(
-        name = &amp;quot;&amp;quot;,
-        labels = c(&amp;quot;St Charles Ave&amp;quot;, &amp;quot;S Carrollton Ave&amp;quot;, &amp;quot;St Claude Ave&amp;quot;),
-        palette = &amp;quot;Set1&amp;quot;) +
-    ggtitle(&amp;quot;Location of all stores in dataset&amp;quot;) +
-    theme(
-        plot.title = element_text(hjust = 0.5),
-        legend.position=&amp;quot;bottom&amp;quot;)
-
-
-  
-
-summary(cars)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
 ##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -319,15 +269,17 @@ pie(
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;storemap&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:storemap&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/storemap-1.png&#34; alt=&#34;All store locations in dataset.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 2: All store locations in dataset.
-&lt;/p&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>My favorite things</title>
+      <link>/project/my-favorite-things/</link>
+      <pubDate>Sat, 15 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/project/my-favorite-things/</guid>
+      <description></description>
     </item>
     
   </channel>
