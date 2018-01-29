@@ -17,7 +17,8 @@
       
     
   
-  <meta name="description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+  <meta name="description" content="This project is currently a WIP (work in progress)
+Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
 Based on a paper by Hensman, Lawrence, and Rattray.
  Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;) drosophila &lt;- drosophila %&gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &lt;- drosophila %&gt;% ggplot(aes(time, log2exp)) &#43; geom_point(aes(col = group, pch = replicate)) &#43; facet_wrap(~gene) &#43; labs(title = &quot;Expression Profiles for all Genes&quot;, x = &quot;Time&quot;, y = &quot;log2-Normalized gene expression&quot;) &#43; scale_colour_brewer(palette = &quot;Dark2&quot;) &#43; scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.">
 
@@ -81,7 +82,8 @@ Based on a paper by Hensman, Lawrence, and Rattray.
   <meta property="og:site_name" content="Spencer Woody">
   <meta property="og:url" content="/post/hgp/">
   <meta property="og:title" content="Hierarchical nonparametric regression | Spencer Woody">
-  <meta property="og:description" content="Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+  <meta property="og:description" content="This project is currently a WIP (work in progress)
+Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
 Based on a paper by Hensman, Lawrence, and Rattray.
  Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;) drosophila &lt;- drosophila %&gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &lt;- drosophila %&gt;% ggplot(aes(time, log2exp)) &#43; geom_point(aes(col = group, pch = replicate)) &#43; facet_wrap(~gene) &#43; labs(title = &quot;Expression Profiles for all Genes&quot;, x = &quot;Time&quot;, y = &quot;log2-Normalized gene expression&quot;) &#43; scale_colour_brewer(palette = &quot;Dark2&quot;) &#43; scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.">
   <meta property="og:locale" content="en-us">
@@ -186,12 +188,10 @@ Based on a paper by Hensman, Lawrence, and Rattray.
         
         
           
-            
-          
         
 
         <li class="nav-item">
-          <a href="https://spencerwoody.github.io/post/-my-favorite-things/" target="_blank" rel="noopener">
+          <a href="/post/-my-favorite-things/">
             
             <span>Resources</span>
             
@@ -324,7 +324,8 @@ Based on a paper by Hensman, Lawrence, and Rattray.
 
 
     <div class="article-style" itemprop="articleBody">
-      <div id="introduction" class="section level2">
+      <p><strong>This project is currently a WIP (work in progress)</strong></p>
+<div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using <code>ggplot2</code>.</p>
 <p>Based on a paper by <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252">Hensman, Lawrence, and Rattray</a>.</p>

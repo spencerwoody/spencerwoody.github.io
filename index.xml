@@ -16,7 +16,8 @@
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/spatial-logit/</guid>
-      <description>&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+      <description>&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data &lt;a href=&#34;https://github.com/spencerwoody/site_build/tree/master/content/post/data&#34;&gt;here&lt;/a&gt;). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.&lt;/p&gt;
 &lt;/div&gt;
@@ -64,7 +65,8 @@ Figure 1: A fancy &lt;code&gt;ggmap&lt;/code&gt;
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+      <description>&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Based on a paper by &lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252&#34;&gt;Hensman, Lawrence, and Rattray&lt;/a&gt;.&lt;/p&gt;
@@ -119,6 +121,8 @@ Figure 1: faceted plot of all genes
 
 &lt;p&gt;I&amp;rsquo;ve done a lot of work for class and on my own that I&amp;rsquo;m pretty proud of and is suitable to display, but most of it resides either only on my laptop or in a GitHub repository. This brings to mind the old saying about a tree falling in the woods with no one around to here it. So I plan on using this platform as a way to display these accomplishments for public consumption.&lt;/p&gt;
 
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Things that are still on your computer are approximately useless.&amp;quot; -&lt;a href=&#34;https://twitter.com/drob?ref_src=twsrc%5Etfw&#34;&gt;@drob&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/eUSR?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#eUSR&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/eUSR2017?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#eUSR2017&lt;/a&gt; &lt;a href=&#34;https://t.co/nS3IBiRHBn&#34;&gt;pic.twitter.com/nS3IBiRHBn&lt;/a&gt;&lt;/p&gt;&amp;mdash; Amelia McNamara (@AmeliaMN) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/926509282874585089?ref_src=twsrc%5Etfw&#34;&gt;November 3, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;2-record-my-learning-process-for-the-sake-of-posterity&#34;&gt;2. Record my learning process for the sake of posterity&lt;/h2&gt;
 
 &lt;p&gt;Ever since I started my PhD program, I&amp;rsquo;ve learned a great deal about R, C++, LaTeX, using GitHub, project management, and statistical modeling, just to name a few topics. This is all valuable knowledge of course. Similar to the last point, there&amp;rsquo;s little sense in having this knowledge reside only in my head. If I record particularly useful tips, tricks, commands, workflows, etc., then it is that much easier for me to look back on, and even better, to share with others.&lt;/p&gt;
@@ -162,7 +166,7 @@ Figure 1: faceted plot of all genes
 
 &lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources&lt;/h2&gt;
 
-&lt;h3 id=&#34;the-holy-trinity-of-books-written-by-hadley-wickham&#34;&gt;The holy trinity of books written by Hadley Wickham&lt;/h3&gt;
+&lt;h3 id=&#34;books-written-by-hadley-wickham&#34;&gt;Books written by Hadley Wickham 🇳🇿&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz&#34; target=&#34;_blank&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
@@ -188,15 +192,16 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html&#34; target=&#34;_blank&#34;&gt;Top 50 ggplot2 Visualizations&lt;/a&gt;: A great reference for producing a wide variety of data visualizations&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory&lt;/h3&gt;
+&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory 📊 🤔&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://socviz.co&#34; target=&#34;_blank&#34;&gt;Data Visualization: A practical introduction, by Kieran Healy&lt;/a&gt;: A good walkthrough of the &amp;ldquo;why&amp;rdquo; behind the grammar of graphics, instead of just the &amp;ldquo;how&amp;rdquo; (I still haven&amp;rsquo;t come across a good explanation of &lt;code&gt;ggplot2&lt;/code&gt;&amp;rsquo;s default use of a grey background, however&amp;hellip;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R&lt;/h3&gt;
+&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R ❤️ 💛 💚 💙 💜&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf&#34; target=&#34;_blank&#34;&gt;R Colors&lt;/a&gt;: An exhaustive list of the default named colors in R 🎨&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;viridis&lt;/code&gt; package&lt;/a&gt;: &amp;ldquo;Use the color scales in this package to make plots that are pretty, better represent your data, easier to read by those with colorblindness, and print well in grey scale&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 

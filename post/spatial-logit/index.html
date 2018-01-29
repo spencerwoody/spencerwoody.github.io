@@ -17,7 +17,8 @@
       
     
   
-  <meta name="description" content="Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
+  <meta name="description" content="This project is currently a WIP (work in progress)
+Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
  Read in the data library(dplyr) library(ggplot2) theme_set(theme_bw(base_size = 12)) library(ggmap) nola &lt;- read.csv(&quot;data/nola.csv&quot;) NOLAmap &lt;- get_map( location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), zoom = 13, col = &quot;bw&quot;) storemap &lt;- ggmap(NOLAmap) &#43; geom_point(data = nola, aes(x = lon, y = lat, col = factor(street)), alpha = 0.">
 
   
@@ -80,7 +81,8 @@
   <meta property="og:site_name" content="Spencer Woody">
   <meta property="og:url" content="/post/spatial-logit/">
   <meta property="og:title" content="Spatial logit model | Spencer Woody">
-  <meta property="og:description" content="Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
+  <meta property="og:description" content="This project is currently a WIP (work in progress)
+Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
  Read in the data library(dplyr) library(ggplot2) theme_set(theme_bw(base_size = 12)) library(ggmap) nola &lt;- read.csv(&quot;data/nola.csv&quot;) NOLAmap &lt;- get_map( location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), zoom = 13, col = &quot;bw&quot;) storemap &lt;- ggmap(NOLAmap) &#43; geom_point(data = nola, aes(x = lon, y = lat, col = factor(street)), alpha = 0.">
   <meta property="og:locale" content="en-us">
   
@@ -184,12 +186,10 @@
         
         
           
-            
-          
         
 
         <li class="nav-item">
-          <a href="https://spencerwoody.github.io/post/-my-favorite-things/" target="_blank" rel="noopener">
+          <a href="/post/-my-favorite-things/">
             
             <span>Resources</span>
             
@@ -325,7 +325,8 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      <div id="introduction" class="section level2">
+      <p><strong>This project is currently a WIP (work in progress)</strong></p>
+<div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data <a href="https://github.com/spencerwoody/site_build/tree/master/content/post/data">here</a>). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.</p>
 </div>

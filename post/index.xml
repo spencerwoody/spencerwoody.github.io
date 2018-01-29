@@ -18,7 +18,8 @@
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/spatial-logit/</guid>
-      <description>Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
+      <description>This project is currently a WIP (work in progress)
+Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
  Read in the data library(dplyr) library(ggplot2) theme_set(theme_bw(base_size = 12)) library(ggmap) nola &amp;lt;- read.csv(&amp;quot;data/nola.csv&amp;quot;) NOLAmap &amp;lt;- get_map( location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), zoom = 13, col = &amp;quot;bw&amp;quot;) storemap &amp;lt;- ggmap(NOLAmap) + geom_point(data = nola, aes(x = lon, y = lat, col = factor(street)), alpha = 0.</description>
     </item>
     
@@ -28,7 +29,8 @@
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
+      <description>This project is currently a WIP (work in progress)
+Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
 Based on a paper by Hensman, Lawrence, and Rattray.
  Read in the data library(dplyr) library(forcats) library(ggplot2) theme_set(theme_bw(base_size = 12)) drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;) drosophila &amp;lt;- drosophila %&amp;gt;% mutate(gene = fct_inorder(gene))  Plot the data allgenes &amp;lt;- drosophila %&amp;gt;% ggplot(aes(time, log2exp)) + geom_point(aes(col = group, pch = replicate)) + facet_wrap(~gene) + labs(title = &amp;quot;Expression Profiles for all Genes&amp;quot;, x = &amp;quot;Time&amp;quot;, y = &amp;quot;log2-Normalized gene expression&amp;quot;) + scale_colour_brewer(palette = &amp;quot;Dark2&amp;quot;) + scale_x_continuous(breaks = seq(0, 12, by = 2))  You can also embed plots.</description>
     </item>
@@ -49,7 +51,7 @@ Based on a paper by Hensman, Lawrence, and Rattray.
       
       <guid>/post/-my-favorite-things/</guid>
       <description>Basically a collection of links I&amp;rsquo;ve found useful during my past work in statistics and data science. Because bookmark folders are so passé.
-Online learning resources The holy trinity of books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks  The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
+Online learning resources Books written by Hadley Wickham 🇳🇿  R for Data Science R Packages Advanced R  Textbooks  The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
     </item>
     
   </channel>
