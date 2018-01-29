@@ -162,11 +162,11 @@ Figure 1: faceted plot of all genes
       <guid>/post/-my-favorite-things/</guid>
       <description>
 
-&lt;p&gt;Basically a collection of links I&amp;rsquo;ve found useful during my past work in statistics and data science. Because bookmark folders are so passé.&lt;/p&gt;
+&lt;p&gt;This is a collection of sites and resources I&amp;rsquo;ve found useful during my past work in statistics and data science. Because bookmark folders are so passé.&lt;/p&gt;
 
-&lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources&lt;/h2&gt;
+&lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources 🌍💡&lt;/h2&gt;
 
-&lt;h3 id=&#34;books-written-by-hadley-wickham&#34;&gt;Books written by Hadley Wickham 🇳🇿&lt;/h3&gt;
+&lt;h3 id=&#34;books-written-by-hadley-wickham&#34;&gt;Books written by Hadley Wickham&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz&#34; target=&#34;_blank&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
@@ -174,7 +174,7 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz&#34; target=&#34;_blank&#34;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks&lt;/h2&gt;
+&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks 📖&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/Papers/ESLII.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Elements of Statistical Learning&lt;/em&gt; by Hastie, Tibshirani, and Friedman&lt;/a&gt;&lt;/li&gt;
@@ -192,20 +192,24 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html&#34; target=&#34;_blank&#34;&gt;Top 50 ggplot2 Visualizations&lt;/a&gt;: A great reference for producing a wide variety of data visualizations&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory 📊 🤔&lt;/h3&gt;
+&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory 📊🤔&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://socviz.co&#34; target=&#34;_blank&#34;&gt;Data Visualization: A practical introduction, by Kieran Healy&lt;/a&gt;: A good walkthrough of the &amp;ldquo;why&amp;rdquo; behind the grammar of graphics, instead of just the &amp;ldquo;how&amp;rdquo; (I still haven&amp;rsquo;t come across a good explanation of &lt;code&gt;ggplot2&lt;/code&gt;&amp;rsquo;s default use of a grey background, however&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf&#34; target=&#34;_blank&#34;&gt;Practical Rules for Using Color in Charts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R ❤️ 💛 💚 💙 💜&lt;/h3&gt;
+&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R ❤️💛💚💙💜&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf&#34; target=&#34;_blank&#34;&gt;R Colors&lt;/a&gt;: An exhaustive list of the default named colors in R 🎨&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://research.stowers.org/mcm/efg/R/Color/Chart/ColorChart.pdf&#34; target=&#34;_blank&#34;&gt;R Colors&lt;/a&gt;: An exhaustive list of the default named colors in R, along with HEX and RGB codes&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;viridis&lt;/code&gt; package&lt;/a&gt;: &amp;ldquo;Use the color scales in this package to make plots that are pretty, better represent your data, easier to read by those with colorblindness, and print well in grey scale&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/karthik/wesanderson&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;wesanderson&lt;/code&gt; package&lt;/a&gt;: Color palettes inspired by the filmmaker Wes Anderson&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://earlglynn.github.io/RNotes/package/RColorBrewer/index.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RColorBrewer&lt;/code&gt; package walkthrough&lt;/a&gt;, with a good explanation of differences between and uses of qualitative, sequential, and diverging color palettes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colorbrewer2.org/#type=qualitative&amp;amp;scheme=Set3&amp;amp;n=3&#34; target=&#34;_blank&#34;&gt;Colorbrewer 2.0: color advice for cartography&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;reference-for-rcpp-and-rcpparmadillo-a-name-rcpp-a&#34;&gt;Reference for &lt;code&gt;Rcpp&lt;/code&gt; and &lt;code&gt;RcppArmadillo&lt;/code&gt; &lt;a name=&#34;rcpp&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;reference-for-rcpp-and-rcpparmadillo&#34;&gt;Reference for &lt;code&gt;Rcpp&lt;/code&gt; and &lt;code&gt;RcppArmadillo&lt;/code&gt; 💻&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz/Rcpp.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; chapter in Advanced R&lt;/a&gt;: In my opinion, the best primer for Rcpp (even for C++ noobs)&lt;/li&gt;
@@ -214,7 +218,7 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/papers/rcpp_ku_nov2013-part2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RcppArmadillo&lt;/code&gt; examples from Dirk Eddelbuettel (slideshow)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;blogs-and-feeds-i-follow-a-name-blogs-a&#34;&gt;Blogs and feeds I follow &lt;a name=&#34;blogs&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;blogs-and-feeds-i-follow&#34;&gt;Blogs and feeds I follow 📝&lt;/h2&gt;
 
 &lt;h3 id=&#34;data-science&#34;&gt;Data science&lt;/h3&gt;
 
