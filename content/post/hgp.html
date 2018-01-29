@@ -1,0 +1,117 @@
+---
+title: "Hierarchical nonparametric regression"
+author: "Spencer Woody"
+date: 2018-01-30
+categories: ["Project", "R", "wip"]
+tags: []
+summary: Hierarchical Gaussian process regression with application to drosophila microarray data
+---
+
+
+
+<p><strong>This project is currently a WIP (work in progress)</strong></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using <code>ggplot2</code>.</p>
+<p>Based on a paper by <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252">Hensman, Lawrence, and Rattray</a>.</p>
+<p>Let <span class="math inline">\(i\)</span> be the subscript for clusters of genes, <span class="math inline">\(n\)</span> in the subscript genes, <span class="math inline">\(r\)</span> is the subscript for replicates. If gene <span class="math inline">\(n\)</span> belongs to cluster <span class="math inline">\(i\)</span> we denote this with <span class="math inline">\(n \in c_i,\)</span> and <span class="math inline">\(N_i = \# \left\{ n \in c_i \right\}.\)</span> Each gene <span class="math inline">\(n\)</span> has <span class="math inline">\(N_n\)</span> replicates, and each replicate <span class="math inline">\(r\)</span> of gene <span class="math inline">\(n\)</span> has <span class="math inline">\(N_{nr}\)</span> measuremeants across time. Note that because every array of genes is measured all at once, each gene has the same <span class="math inline">\(D = \sum_{r=1}^{N_n} N_{nr}\)</span> total measurements across time for all replicates.</p>
+<p>We model gene expression levels as a hierarchical Gaussian process,</p>
+<p><span class="math display">\[  \begin{aligned} h_i(t) &amp;\sim \text{GP}(\mathbf{0}, k_h(t, t&#39;)) \\
+    g_n(t) &amp;\sim \text{GP}(h_i(t), k_g(t, t&#39;)) \text{ for } n\in c_i \\
+    f_{nr}(t) &amp;\sim \text{GP}(g_n(t), k_f(t, t&#39;)), \end{aligned}  \]</span></p>
+<pre><code>for some covariance functions $k_h(t, t&#39;)$, $k_g(t, t&#39;)$, and $k_f(t, t&#39;)$. </code></pre>
+<p>Our data consist of a small subset of from a time-course DNA microarray experiment with <em>Drosophila melanogaster</em>. The gene expression levels of 14 genes are measured over time.</p>
+<div id="the-model" class="section level2">
+<h2>The model</h2>
+<p>Suppose we have <span class="math inline">\(\mathbf{h}_i\)</span>, <span class="math inline">\(\mathbf{g}_n\)</span>, and <span class="math inline">\(\mathbf{f}_{nr}\)</span>, which are vectors of draws from draws from <span class="math inline">\(h_i(t)\)</span>, <span class="math inline">\(g_n(t)\)</span>, and <span class="math inline">\(f_{nr}(t)\)</span>, respectively, at times <span class="math inline">\(\mathbf{t}_{nr}\)</span>. Define <span class="math inline">\(\mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr&#39;})\)</span> to be the <span class="math inline">\(N_{nr} \times N_{nr&#39;}\)</span> matrix such that its <span class="math inline">\((i, j)\)</span> element is <span class="math inline">\(k_f(\mathbf{t}_{nr}[i], \mathbf{t}_{nr&#39;}[j]),\)</span> and similarly define the matrices <span class="math inline">\(\mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr&#39;})\)</span> and <span class="math inline">\(\mathbf{K}_{h}(\mathbf{t}_{nr}, \mathbf{t}_{nr&#39;})\)</span>. We model the response vector as</p>
+<p><span class="math display">\[ \mathbf{y}_{nr} = \mathbf{f}_{nr} + \mathbf{e},\;\; \mathbf{e} \sim \mathcal{N}(\mathbf{0}, \sigma^2 \mathcal{I}). \]</span></p>
+<p>We can see the following conditional distributions,</p>
+<p><span class="math display">\[  
+\begin{aligned} 
+(\mathbf{y}_{nr} | \mathbf{f}_{nr}, \sigma^2) &amp;\sim \mathcal{N}(\mathbf{f}_{nr}, \sigma^2 \mathcal{I}) \\
+(\mathbf{f}_{nr} | \mathbf{g}_{n}, \theta_f ) &amp;\sim \mathcal{N}(\mathbf{g}_{n}, \mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr})) \\ 
+(\mathbf{g}_{n} | \mathbf{h}_{i}, \theta_g ) &amp;\sim \mathcal{N}(\mathbf{h}_{i}, \mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr})) \\
+(\mathbf{h}_i | \mathbf{t}_{nr}, \theta_h) &amp;\sim \mathcal{N}(\mathbf{0}, \mathbf{K}_h(\mathbf{t}_{nr}, \mathbf{t}_{nr}))
+\end{aligned} 
+\]</span></p>
+<p>We can see that there are two levels of hierarchy here:</p>
+<ul>
+<li>Replicates within genes</li>
+<li>Genes within clusters</li>
+</ul>
+<p>It is easy to find the marginal likelihood of <span class="math inline">\(\bf{y}_{nr}\)</span> through the properties of the multivariate normal distribution,</p>
+<p><span class="math display">\[
+(\mathbf{y}_{nr} | \mathbf{t}_{nr}, \theta_f, \theta_g, \theta_f) \sim \mathcal{N}(\mathbf{0}, \mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \mathbf{K}_{h}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \sigma^2 \mathcal{I}).
+\]</span></p>
+</div>
+<div id="implementation-in-r" class="section level2">
+<h2>Implementation in R</h2>
+<p>First we will library in the required packages and read in the data in the format we want, which reflects the hierarchical nature of the data.</p>
+<div id="read-in-the-data" class="section level3">
+<h3>Read in the data</h3>
+<pre class="r"><code>library(dplyr)
+library(forcats)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+
+drosophila &lt;- read.csv(&quot;data/drosophila.csv&quot;)
+
+drosophila &lt;- drosophila %&gt;%
+  mutate(gene = fct_inorder(gene))</code></pre>
+</div>
+<div id="plot-the-data" class="section level3">
+<h3>Plot the data</h3>
+<pre class="r"><code>allgenes &lt;- drosophila %&gt;% 
+    ggplot(aes(time, log2exp)) +
+    geom_point(aes(col = group, pch = replicate)) +
+    facet_wrap(~gene) +
+    labs(title = &quot;Expression Profiles for all Genes&quot;,
+         x = &quot;Time&quot;,
+         y = &quot;log2-Normalized gene expression&quot;) + 
+    scale_colour_brewer(palette = &quot;Dark2&quot;) +
+    scale_x_continuous(breaks = seq(0, 12, by = 2)) </code></pre>
+<p>See Figure <a href="#fig:facet1">1</a> for example:</p>
+<div class="figure"><span id="fig:facet1"></span>
+<img src="/post/hgp_files/figure-html/facet1-1.png" alt="faceted plot of all genes" width="672" />
+<p class="caption">
+Figure 1: faceted plot of all genes
+</p>
+</div>
+</div>
+</div>
+<div id="appendix-r-session-information" class="section level2">
+<h2>Appendix: R session information</h2>
+<pre class="r"><code>sessionInfo()
+## R version 3.4.2 (2017-09-28)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS High Sierra 10.13.3
+## 
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] bindrcpp_0.2     ggplot2_2.2.1    forcats_0.2.0    dplyr_0.7.4.9000
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.15       knitr_1.18         bindr_0.1         
+##  [4] magrittr_1.5       munsell_0.4.3      tidyselect_0.2.3  
+##  [7] colorspace_1.3-2   R6_2.2.2           rlang_0.1.6.9003  
+## [10] highr_0.6          plyr_1.8.4         stringr_1.2.0     
+## [13] tools_3.4.2        grid_3.4.2         gtable_0.2.0      
+## [16] xfun_0.1           htmltools_0.3.6    lazyeval_0.2.1    
+## [19] yaml_2.1.16        rprojroot_1.3-2    digest_0.6.13     
+## [22] assertthat_0.2.0   tibble_1.4.2       bookdown_0.6      
+## [25] RColorBrewer_1.1-2 purrr_0.2.4.9000   glue_1.2.0        
+## [28] evaluate_0.10.1    rmarkdown_1.8      blogdown_0.5      
+## [31] labeling_0.3       stringi_1.1.5      compiler_3.4.2    
+## [34] pillar_1.1.0       scales_0.5.0.9000  backports_1.1.2   
+## [37] pkgconfig_2.0.1</code></pre>
+</div>
+</div>
