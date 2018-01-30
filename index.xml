@@ -65,7 +65,20 @@ Figure 1: A fancy &lt;code&gt;ggmap&lt;/code&gt;
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-model&#34;&gt;The model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#implementation-in-r&#34;&gt;Implementation in R&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#read-in-the-data&#34;&gt;Read in the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#plot-the-data&#34;&gt;Plot the data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix-r-session-information&#34;&gt;Appendix: R session information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
 &lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
@@ -75,7 +88,7 @@ Figure 1: A fancy &lt;code&gt;ggmap&lt;/code&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[  \begin{aligned} h_i(t) &amp;amp;\sim \text{GP}(\mathbf{0}, k_h(t, t&amp;#39;)) \\
     g_n(t) &amp;amp;\sim \text{GP}(h_i(t), k_g(t, t&amp;#39;)) \text{ for } n\in c_i \\
     f_{nr}(t) &amp;amp;\sim \text{GP}(g_n(t), k_f(t, t&amp;#39;)), \end{aligned}  \]&lt;/span&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for some covariance functions $k_h(t, t&amp;#39;)$, $k_g(t, t&amp;#39;)$, and $k_f(t, t&amp;#39;)$. &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;for some covariance functions &lt;span class=&#34;math inline&#34;&gt;\(k_h(t, t&amp;#39;)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(k_g(t, t&amp;#39;)\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(k_f(t, t&amp;#39;)\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Our data consist of a small subset of from a time-course DNA microarray experiment with &lt;em&gt;Drosophila melanogaster&lt;/em&gt;. The gene expression levels of 14 genes are measured over time.&lt;/p&gt;
 &lt;div id=&#34;the-model&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;The model&lt;/h2&gt;
@@ -285,6 +298,13 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;https://doc.lagout.org/programmation/Multi-Language/Seamless%20R%20and%20C%20%20%20Integration%20with%20Rcpp%20%5BEddelbuettel%202013-06-04%5D.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; book by its creator Dirk Eddelbuettel&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; Quick reference guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/papers/rcpp_ku_nov2013-part2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RcppArmadillo&lt;/code&gt; examples from Dirk Eddelbuettel (slideshow)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;reference-for-latex&#34;&gt;Reference for LaTeX 📜&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.uncg.edu/cmp/reu/presentations/Charles%20Batts%20-%20Beamer%20Tutorial.pdf&#34; target=&#34;_blank&#34;&gt;Tutorial on making slideshows with beamer&lt;/a&gt; with pauses between slides!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alecjacobson/coloremoji.sty&#34; target=&#34;_blank&#34;&gt;Using emoji in LaTeX.&lt;/a&gt; You know you want to 😏&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;blogs-and-feeds-i-follow&#34;&gt;Blogs and feeds I follow 📝&lt;/h2&gt;

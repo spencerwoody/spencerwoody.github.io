@@ -29,10 +29,10 @@ Introduction Here I present a Bayesian spatial logit model for predicting busine
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/hgp/</guid>
-      <description>This project is currently a WIP (work in progress)
+      <description>Introduction The model Implementation in R Read in the data Plot the data  Appendix: R session information    This project is currently a WIP (work in progress)
 Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
 Based on a paper by Hensman, Lawrence, and Rattray.
-Let \(i\) be the subscript for clusters of genes, \(n\) in the subscript genes, \(r\) is the subscript for replicates. If gene \(n\) belongs to cluster \(i\) we denote this with \(n \in c_i,\) and \(N_i = \# \left\{ n \in c_i \right\}.</description>
+Let \(i\) be the subscript for clusters of genes, \(n\) in the subscript genes, \(r\) is the subscript for replicates.</description>
     </item>
     
     <item>
