@@ -304,7 +304,6 @@ Figure 1: faceted plot of all genes
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.uncg.edu/cmp/reu/presentations/Charles%20Batts%20-%20Beamer%20Tutorial.pdf&#34; target=&#34;_blank&#34;&gt;Tutorial on making slideshows with beamer&lt;/a&gt; with pauses between slides!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecjacobson/coloremoji.sty&#34; target=&#34;_blank&#34;&gt;Using emoji in LaTeX.&lt;/a&gt; You know you want to 😏&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;blogs-and-feeds-i-follow&#34;&gt;Blogs and feeds I follow 📝&lt;/h2&gt;
@@ -327,7 +326,7 @@ Figure 1: faceted plot of all genes
 &lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;R styleguides. Yes, you should use one, just like you should always make your bed every morning.&lt;br /&gt;
+&lt;li&gt;R styleguides
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://google.github.io/styleguide/Rguide.xml&#34; target=&#34;_blank&#34;&gt;Google&amp;rsquo;s R styleguide&lt;/a&gt;: Good enough for most cases.&lt;/li&gt;
@@ -340,7 +339,18 @@ Figure 1: faceted plot of all genes
 &lt;li&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/reference/progress_estimated.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;dplyr::progress_estimated()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://gallery.rcpp.org/articles/using-rcppprogress/&#34; target=&#34;_blank&#34;&gt;Progress bars in &lt;code&gt;Rcpp&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34;&gt;Use emojis for GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source&#34; target=&#34;_blank&#34;&gt;Install an R library from source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;all-about-emoji&#34;&gt;All about emoji 😍&lt;/h2&gt;
+
+&lt;p&gt;Anyone who knows me knows how much I ❤️ emoji ☺️&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://emojipedia.org&#34; target=&#34;_blank&#34;&gt;Emojipedia&lt;/a&gt;: Check how your selected emoji will look cross-platform, and even look at how particular emoji have evolved over time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34;&gt;Use emojis for GitHub (on several other online platforms)&lt;/a&gt;: Sadly, not completely up to date&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alecjacobson/coloremoji.sty&#34; target=&#34;_blank&#34;&gt;Using emoji in LaTeX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/eosrei/twemoji-color-font&#34; target=&#34;_blank&#34;&gt;Installing color emoji in Linux&lt;/a&gt;: Installs &lt;a href=&#34;https://emojipedia.org/twitter/&#34; target=&#34;_blank&#34;&gt;twemoji&lt;/a&gt;, from the Twitter platform (which happens to be my favorite set of emoji)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;for-fun&#34;&gt;For fun&lt;/h2&gt;
