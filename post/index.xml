@@ -6,52 +6,18 @@
     <description>Recent content in Posts on Spencer Woody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Spatial logit model</title>
-      <link>/post/spatial-logit/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <title>What I&#39;m up to this summer</title>
+      <link>/post/2018/05/29/what-im-up-to-this-summer/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spatial-logit/</guid>
-      <description>This project is currently a WIP (work in progress)
-Introduction Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data here). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.
- Read in the data library(dplyr) library(ggplot2) theme_set(theme_bw(base_size = 12)) library(ggmap) nola &amp;lt;- read.csv(&amp;quot;data/nola.csv&amp;quot;) NOLAmap &amp;lt;- get_map( location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), zoom = 13, col = &amp;quot;bw&amp;quot;) storemap &amp;lt;- ggmap(NOLAmap) + geom_point(data = nola, aes(x = lon, y = lat, col = factor(street)), alpha = 0.</description>
-    </item>
-    
-    <item>
-      <title>Hierarchical nonparametric regression</title>
-      <link>/post/hgp/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hgp/</guid>
-      <description>Introduction The model Implementation in R Read in the data Plot the data  Appendix: R session information    This project is currently a WIP (work in progress)
-Introduction Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using ggplot2.
-Based on a paper by Hensman, Lawrence, and Rattray.
-Let \(i\) be the subscript for clusters of genes, \(n\) in the subscript genes, \(r\) is the subscript for replicates.</description>
-    </item>
-    
-    <item>
-      <title>Hello, world</title>
-      <link>/post/2018-01-28-hello-world/</link>
-      <pubDate>Sun, 28 Jan 2018 00:00:00 -0600</pubDate>
-      
-      <guid>/post/2018-01-28-hello-world/</guid>
-      <description>Hi, I&amp;rsquo;m Spencer. Welcome to my personal website. This is my first time creating a site like this, and I&amp;rsquo;ve been thinking about doing this sort of thing for a while now. I was finally convinced to pull the trigger after reading this blog post by John MacKintosh, so it became something of a News Years resolution for me. It took some time to get all this up and running, but I believe it will turn out to be a good investment.</description>
-    </item>
-    
-    <item>
-      <title>My favorite things</title>
-      <link>/post/-my-favorite-things/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/post/-my-favorite-things/</guid>
-      <description>This is a collection of sites and resources I&amp;rsquo;ve found useful during my past work in statistics and data science. Bookmark folders are so passé.
-Online learning resources 🌍💡 Books written by Hadley Wickham  R for Data Science R Packages Advanced R  Textbooks 📖  The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman The Bayesian Choice by Christian Robert  Reference for ggplot2 &amp;amp; visualization in R 📈 I recommend to every R user, no matter their skill level, to take the plunge into using only ggplot2 for producing visualizations in R.</description>
+      <guid>/post/2018/05/29/what-im-up-to-this-summer/</guid>
+      <description> Work I&amp;rsquo;m doing  Collaborating with Sandia National Labs on Bayesian model calibration and uncertainty quantification Original post-selection inference, for application to sparse normal means problem and spatial hotspot detection  Conferences I am attending  May 21 - 23, Atlantic Causal Inference Conference, Carnegie Melon University, Pittsburgh, PA June 24 - 29, ISBA World Meeting 2018, University of Edinburgh  </description>
     </item>
     
   </channel>

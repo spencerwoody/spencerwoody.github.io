@@ -1,389 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spencer Woody on Spencer Woody</title>
+    <title>Home on Spencer Woody</title>
     <link>/</link>
-    <description>Recent content in Spencer Woody on Spencer Woody</description>
+    <description>Recent content in Home on Spencer Woody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Spatial logit model</title>
-      <link>/post/spatial-logit/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <title>What I&#39;m up to this summer</title>
+      <link>/post/2018/05/29/what-im-up-to-this-summer/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spatial-logit/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Here I present a Bayesian spatial logit model for predicting business reopening in New Orleans after Hurricane Katrina (get the data &lt;a href=&#34;https://github.com/spencerwoody/site_build/tree/master/content/post/data&#34;&gt;here&lt;/a&gt;). The spatial random effect comes from a Gaussian process, and I use the Polya-Gamma data augmentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;read-in-the-data&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Read in the data&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-library(ggplot2)
-theme_set(theme_bw(base_size = 12))
-library(ggmap)
-
-nola &amp;lt;- read.csv(&amp;quot;data/nola.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;NOLAmap &amp;lt;- get_map(
-    location = c(min(nola$lon), min(nola$lat), max(nola$lon), max(nola$lat)), 
-    zoom = 13, 
-    col = &amp;quot;bw&amp;quot;)
-
-storemap &amp;lt;- ggmap(NOLAmap) + 
-    geom_point(data = nola, 
-               aes(x = lon, y = lat, col = factor(street)), alpha = 0.5) +
-  scale_colour_brewer(name = &amp;quot;&amp;quot;, 
-                      labels = c(&amp;quot;St Charles Ave&amp;quot;, 
-                                 &amp;quot;S Carrollton Ave&amp;quot;, 
-                                 &amp;quot;St Claude Ave&amp;quot;),
-                      palette = &amp;quot;Set1&amp;quot;) +
-  labs(title = &amp;quot;Location of all stores in dataset&amp;quot;) + 
-  theme(legend.position=&amp;quot;bottom&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;plot-the-store-locations&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Plot the store locations&lt;/h2&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:storemap&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;storemap&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:storemap&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/spatial-logit_files/figure-html/storemap-1.png&#34; alt=&#34;A fancy `ggmap`&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy &lt;code&gt;ggmap&lt;/code&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>/post/2018/05/29/what-im-up-to-this-summer/</guid>
+      <description> Work I&amp;rsquo;m doing  Collaborating with Sandia National Labs on Bayesian model calibration and uncertainty quantification Original post-selection inference, for application to sparse normal means problem and spatial hotspot detection  Conferences I am attending  May 21 - 23, Atlantic Causal Inference Conference, Carnegie Melon University, Pittsburgh, PA June 24 - 29, ISBA World Meeting 2018, University of Edinburgh  </description>
     </item>
     
     <item>
-      <title>Hierarchical nonparametric regression</title>
-      <link>/post/hgp/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Papers</title>
+      <link>/papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/hgp/</guid>
-      <description>&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#the-model&#34;&gt;The model&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#implementation-in-r&#34;&gt;Implementation in R&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#read-in-the-data&#34;&gt;Read in the data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#plot-the-data&#34;&gt;Plot the data&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#appendix-r-session-information&#34;&gt;Appendix: R session information&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;This project is currently a WIP (work in progress)&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Hierarchical Gaussian process regression with application to drosophila microarray data, implemented in R and visualized using &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Based on a paper by &lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-252&#34;&gt;Hensman, Lawrence, and Rattray&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; be the subscript for clusters of genes, &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; in the subscript genes, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the subscript for replicates. If gene &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; belongs to cluster &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; we denote this with &lt;span class=&#34;math inline&#34;&gt;\(n \in c_i,\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_i = \# \left\{ n \in c_i \right\}.\)&lt;/span&gt; Each gene &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; has &lt;span class=&#34;math inline&#34;&gt;\(N_n\)&lt;/span&gt; replicates, and each replicate &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; of gene &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; has &lt;span class=&#34;math inline&#34;&gt;\(N_{nr}\)&lt;/span&gt; measuremeants across time. Note that because every array of genes is measured all at once, each gene has the same &lt;span class=&#34;math inline&#34;&gt;\(D = \sum_{r=1}^{N_n} N_{nr}\)&lt;/span&gt; total measurements across time for all replicates.&lt;/p&gt;
-&lt;p&gt;We model gene expression levels as a hierarchical Gaussian process,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[  \begin{aligned} h_i(t) &amp;amp;\sim \text{GP}(\mathbf{0}, k_h(t, t&amp;#39;)) \\
-    g_n(t) &amp;amp;\sim \text{GP}(h_i(t), k_g(t, t&amp;#39;)) \text{ for } n\in c_i \\
-    f_{nr}(t) &amp;amp;\sim \text{GP}(g_n(t), k_f(t, t&amp;#39;)), \end{aligned}  \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;for some covariance functions &lt;span class=&#34;math inline&#34;&gt;\(k_h(t, t&amp;#39;)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(k_g(t, t&amp;#39;)\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(k_f(t, t&amp;#39;)\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Our data consist of a small subset of from a time-course DNA microarray experiment with &lt;em&gt;Drosophila melanogaster&lt;/em&gt;. The gene expression levels of 14 genes are measured over time.&lt;/p&gt;
-&lt;div id=&#34;the-model&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The model&lt;/h2&gt;
-&lt;p&gt;Suppose we have &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{h}_i\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{g}_n\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{f}_{nr}\)&lt;/span&gt;, which are vectors of draws from draws from &lt;span class=&#34;math inline&#34;&gt;\(h_i(t)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(g_n(t)\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(f_{nr}(t)\)&lt;/span&gt;, respectively, at times &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{t}_{nr}\)&lt;/span&gt;. Define &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr&amp;#39;})\)&lt;/span&gt; to be the &lt;span class=&#34;math inline&#34;&gt;\(N_{nr} \times N_{nr&amp;#39;}\)&lt;/span&gt; matrix such that its &lt;span class=&#34;math inline&#34;&gt;\((i, j)\)&lt;/span&gt; element is &lt;span class=&#34;math inline&#34;&gt;\(k_f(\mathbf{t}_{nr}[i], \mathbf{t}_{nr&amp;#39;}[j]),\)&lt;/span&gt; and similarly define the matrices &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr&amp;#39;})\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{K}_{h}(\mathbf{t}_{nr}, \mathbf{t}_{nr&amp;#39;})\)&lt;/span&gt;. We model the response vector as&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \mathbf{y}_{nr} = \mathbf{f}_{nr} + \mathbf{e},\;\; \mathbf{e} \sim \mathcal{N}(\mathbf{0}, \sigma^2 \mathcal{I}). \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We can see the following conditional distributions,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[  
-\begin{aligned} 
-(\mathbf{y}_{nr} | \mathbf{f}_{nr}, \sigma^2) &amp;amp;\sim \mathcal{N}(\mathbf{f}_{nr}, \sigma^2 \mathcal{I}) \\
-(\mathbf{f}_{nr} | \mathbf{g}_{n}, \theta_f ) &amp;amp;\sim \mathcal{N}(\mathbf{g}_{n}, \mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr})) \\ 
-(\mathbf{g}_{n} | \mathbf{h}_{i}, \theta_g ) &amp;amp;\sim \mathcal{N}(\mathbf{h}_{i}, \mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr})) \\
-(\mathbf{h}_i | \mathbf{t}_{nr}, \theta_h) &amp;amp;\sim \mathcal{N}(\mathbf{0}, \mathbf{K}_h(\mathbf{t}_{nr}, \mathbf{t}_{nr}))
-\end{aligned} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We can see that there are two levels of hierarchy here:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Replicates within genes&lt;/li&gt;
-&lt;li&gt;Genes within clusters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It is easy to find the marginal likelihood of &lt;span class=&#34;math inline&#34;&gt;\(\bf{y}_{nr}\)&lt;/span&gt; through the properties of the multivariate normal distribution,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-(\mathbf{y}_{nr} | \mathbf{t}_{nr}, \theta_f, \theta_g, \theta_f) \sim \mathcal{N}(\mathbf{0}, \mathbf{K}_{f}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \mathbf{K}_{g}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \mathbf{K}_{h}(\mathbf{t}_{nr}, \mathbf{t}_{nr}) + \sigma^2 \mathcal{I}).
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;implementation-in-r&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Implementation in R&lt;/h2&gt;
-&lt;p&gt;First we will library in the required packages and read in the data in the format we want, which reflects the hierarchical nature of the data.&lt;/p&gt;
-&lt;div id=&#34;read-in-the-data&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Read in the data&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-library(forcats)
-library(ggplot2)
-theme_set(theme_bw(base_size = 12))
-
-drosophila &amp;lt;- read.csv(&amp;quot;data/drosophila.csv&amp;quot;)
-
-drosophila &amp;lt;- drosophila %&amp;gt;%
-  mutate(gene = fct_inorder(gene))&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;plot-the-data&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Plot the data&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;allgenes &amp;lt;- drosophila %&amp;gt;% 
-    ggplot(aes(time, log2exp)) +
-    geom_point(aes(col = group, pch = replicate)) +
-    facet_wrap(~gene) +
-    labs(title = &amp;quot;Expression Profiles for all Genes&amp;quot;,
-         x = &amp;quot;Time&amp;quot;,
-         y = &amp;quot;log2-Normalized gene expression&amp;quot;) + 
-    scale_colour_brewer(palette = &amp;quot;Dark2&amp;quot;) +
-    scale_x_continuous(breaks = seq(0, 12, by = 2)) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See Figure &lt;a href=&#34;#fig:facet1&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:facet1&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/hgp_files/figure-html/facet1-1.png&#34; alt=&#34;faceted plot of all genes&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: faceted plot of all genes
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;appendix-r-session-information&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Appendix: R session information&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()
-## R version 3.4.2 (2017-09-28)
-## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS High Sierra 10.13.3
-## 
-## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
-## 
-## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
-## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
-## 
-## other attached packages:
-## [1] bindrcpp_0.2     ggplot2_2.2.1    forcats_0.2.0    dplyr_0.7.4.9000
-## 
-## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.15       knitr_1.18         bindr_0.1         
-##  [4] magrittr_1.5       munsell_0.4.3      tidyselect_0.2.3  
-##  [7] colorspace_1.3-2   R6_2.2.2           rlang_0.1.6.9003  
-## [10] highr_0.6          plyr_1.8.4         stringr_1.2.0     
-## [13] tools_3.4.2        grid_3.4.2         gtable_0.2.0      
-## [16] xfun_0.1           htmltools_0.3.6    lazyeval_0.2.1    
-## [19] yaml_2.1.16        rprojroot_1.3-2    digest_0.6.13     
-## [22] assertthat_0.2.0   tibble_1.4.2       bookdown_0.6      
-## [25] RColorBrewer_1.1-2 purrr_0.2.4.9000   glue_1.2.0        
-## [28] evaluate_0.10.1    rmarkdown_1.8      blogdown_0.5      
-## [31] labeling_0.3       stringi_1.1.5      compiler_3.4.2    
-## [34] pillar_1.1.0       scales_0.5.0.9000  backports_1.1.2   
-## [37] pkgconfig_2.0.1&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>/papers/</guid>
+      <description>To be updated&amp;hellip;</description>
     </item>
     
     <item>
-      <title>Hello, world</title>
-      <link>/post/2018-01-28-hello-world/</link>
-      <pubDate>Sun, 28 Jan 2018 00:00:00 -0600</pubDate>
+      <title>Software</title>
+      <link>/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-01-28-hello-world/</guid>
-      <description>
-
-&lt;p&gt;Hi, I&amp;rsquo;m Spencer. Welcome to my personal website. This is my first time creating a site like this, and I&amp;rsquo;ve been thinking about doing this sort of thing for a while now. I was finally convinced to pull the trigger after reading &lt;a href=&#34;https://www.johnmackintosh.com/2017-12-30-time-to-shine/&#34; target=&#34;_blank&#34;&gt;this blog post&lt;/a&gt; by John MacKintosh, so it became something of a News Years resolution for me. It took some time to get all this up and running, but I believe it will turn out to be a good investment.&lt;/p&gt;
-
-&lt;p&gt;This first post is meant to be a mission statement for this site, describing my intent for this project, outside of having an online CV for myself. Here are three main goals I&amp;rsquo;ve set for myself.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-create-an-online-portfolio-of-data-analyses-code-visualizations-etc&#34;&gt;1. Create an online portfolio of data analyses, code, visualizations, etc.&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;ve done a lot of work for class and on my own that I&amp;rsquo;m pretty proud of and is suitable to display, but most of it resides either only on my laptop or in a GitHub repository. This brings to mind the old saying about a tree falling in the woods with no one around to here it. So I plan on using this platform as a way to display these accomplishments for public consumption.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Things that are still on your computer are approximately useless.&amp;quot; -&lt;a href=&#34;https://twitter.com/drob?ref_src=twsrc%5Etfw&#34;&gt;@drob&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/eUSR?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#eUSR&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/eUSR2017?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#eUSR2017&lt;/a&gt; &lt;a href=&#34;https://t.co/nS3IBiRHBn&#34;&gt;pic.twitter.com/nS3IBiRHBn&lt;/a&gt;&lt;/p&gt;&amp;mdash; Amelia McNamara (@AmeliaMN) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/926509282874585089?ref_src=twsrc%5Etfw&#34;&gt;November 3, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-record-my-learning-process-for-the-sake-of-posterity&#34;&gt;2. Record my learning process for the sake of posterity&lt;/h2&gt;
-
-&lt;p&gt;Ever since I started my PhD program, I&amp;rsquo;ve learned a great deal about R, C++, LaTeX, using GitHub, project management, and statistical modeling, just to name a few topics. This is all valuable knowledge of course. Similar to the last point, there&amp;rsquo;s little sense in having this knowledge reside only in my head. If I record particularly useful tips, tricks, commands, workflows, etc., then it is that much easier for me to look back on, and even better, to share with others.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, I collaborate a lot with my colleagues within my department, and I find myself repeating a lot of what I tell others. And as &lt;a href=&#34;http://varianceexplained.org&#34; target=&#34;_blank&#34;&gt;David Robinson&lt;/a&gt; put it so well:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;When you’ve written the same code 3 times, write a function&lt;br&gt;&lt;br&gt;When you’ve given the same in-person advice 3 times, write a blog post&lt;/p&gt;&amp;mdash; David Robinson (@drob) &lt;a href=&#34;https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw&#34;&gt;November 9, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;3-improve-my-writing-skills&#34;&gt;3. Improve my writing skills&lt;/h2&gt;
-
-&lt;p&gt;The older I get and the more I learn, the more I realized the importance of good writing. Whether it&amp;rsquo;s in business or academia, the ability to express your thoughts and opinions in a clear and understandable way is invaluable. Now, I consider myself a decent writer. I can whip together a pretty good essay or policy memo when needed. I even maintain a journal for personal use. But the biggest challenge for me is writing in a time-efficient way. I don&amp;rsquo;t even want to admit how long this relatively short post has taken me to write. I&amp;rsquo;ll need to write a lot in the coming years as I progress through my PhD program, and I figure that the only way to improve my skills as a writer is to write more, and write often.&lt;/p&gt;
-
-&lt;h2 id=&#34;that-s-it-for-now&#34;&gt;That&amp;rsquo;s it for now&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s hoping for a fruitful career in blogging.&lt;/p&gt;
-
-&lt;h3 id=&#34;appendix-how-i-made-this-site&#34;&gt;Appendix: how I made this site&lt;/h3&gt;
-
-&lt;p&gt;This site is made within &lt;a href=&#34;http://rstudio.com/&#34; target=&#34;_blank&#34;&gt;RStudio&lt;/a&gt; using the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; package by Yihui Xie. The underlying framework is &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, and I used the &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34; target=&#34;_blank&#34;&gt;Academic theme&lt;/a&gt; by George Cushen. Go ahead and give it a try. 😉&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Spatial logit model</title>
-      <link>/project/spatial-logit/</link>
-      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/spatial-logit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My favorite things</title>
-      <link>/post/-my-favorite-things/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/post/-my-favorite-things/</guid>
-      <description>
-
-&lt;p&gt;This is a collection of sites and resources I&amp;rsquo;ve found useful during my past work in statistics and data science. Bookmark folders are so passé.&lt;/p&gt;
-
-&lt;h2 id=&#34;online-learning-resources&#34;&gt;Online learning resources 🌍💡&lt;/h2&gt;
-
-&lt;h3 id=&#34;books-written-by-hadley-wickham&#34;&gt;Books written by Hadley Wickham&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz&#34; target=&#34;_blank&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz&#34; target=&#34;_blank&#34;&gt;R Packages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz&#34; target=&#34;_blank&#34;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks 📖&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/Papers/ESLII.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Elements of Statistical Learning&lt;/em&gt; by Hastie, Tibshirani, and Friedman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Bayesian Choice&lt;/em&gt; by Christian Robert&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;reference-for-ggplot2-visualization-in-r&#34;&gt;Reference for &lt;code&gt;ggplot2&lt;/code&gt; &amp;amp; visualization in R 📈&lt;/h2&gt;
-
-&lt;p&gt;I recommend to every R user, no matter their skill level, to take the plunge into using only &lt;code&gt;ggplot2&lt;/code&gt; for producing visualizations in R. Yes, there&amp;rsquo;s a learning curve, but in my opinion, once you learn the &amp;ldquo;grammar&amp;rdquo; behind it, you can make plots much more quickly because of the much greater consistency.&lt;/p&gt;
-
-&lt;h3 id=&#34;ggplot2&#34;&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz/data-visualisation.html&#34; target=&#34;_blank&#34;&gt;R for Data Science, Chapter 3&lt;/a&gt;: A good primer for begineers&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html&#34; target=&#34;_blank&#34;&gt;Top 50 ggplot2 Visualizations&lt;/a&gt;: A great reference for producing a wide variety of data visualizations&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;visualization-theory&#34;&gt;Visualization theory 📊🤔&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://socviz.co&#34; target=&#34;_blank&#34;&gt;Data Visualization: A practical introduction, by Kieran Healy&lt;/a&gt;: A good walkthrough of the &amp;ldquo;why&amp;rdquo; behind the grammar of graphics, instead of just the &amp;ldquo;how&amp;rdquo; (I still haven&amp;rsquo;t come across a good explanation of &lt;code&gt;ggplot2&lt;/code&gt;&amp;rsquo;s default use of a grey background, however&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf&#34; target=&#34;_blank&#34;&gt;Practical Rules for Using Color in Charts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;colors-in-r&#34;&gt;Colors in R ❤️💛💚💙💜&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://research.stowers.org/mcm/efg/R/Color/Chart/ColorChart.pdf&#34; target=&#34;_blank&#34;&gt;R Colors&lt;/a&gt;: An exhaustive list of the default named colors in R, along with HEX and RGB codes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;viridis&lt;/code&gt; package&lt;/a&gt;: &amp;ldquo;Use the color scales in this package to make plots that are pretty, better represent your data, easier to read by those with colorblindness, and print well in grey scale&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/karthik/wesanderson&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;wesanderson&lt;/code&gt; package&lt;/a&gt;: Color palettes inspired by the filmmaker Wes Anderson&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://earlglynn.github.io/RNotes/package/RColorBrewer/index.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RColorBrewer&lt;/code&gt; package walkthrough&lt;/a&gt;, with a good explanation of differences between and uses of qualitative, sequential, and diverging color palettes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://colorbrewer2.org/#type=qualitative&amp;amp;scheme=Set3&amp;amp;n=3&#34; target=&#34;_blank&#34;&gt;Colorbrewer 2.0: color advice for cartography&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;reference-for-rcpp-and-rcpparmadillo&#34;&gt;Reference for &lt;code&gt;Rcpp&lt;/code&gt; and &lt;code&gt;RcppArmadillo&lt;/code&gt; 💻&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://adv-r.had.co.nz/Rcpp.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; chapter in Advanced R&lt;/a&gt;: In my opinion, the best primer for Rcpp (even for C++ noobs)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://doc.lagout.org/programmation/Multi-Language/Seamless%20R%20and%20C%20%20%20Integration%20with%20Rcpp%20%5BEddelbuettel%202013-06-04%5D.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; book by its creator Dirk Eddelbuettel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Rcpp&lt;/code&gt; Quick reference guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/papers/rcpp_ku_nov2013-part2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;RcppArmadillo&lt;/code&gt; examples from Dirk Eddelbuettel (slideshow)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;reference-for-latex&#34;&gt;Reference for LaTeX 📜&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.uncg.edu/cmp/reu/presentations/Charles%20Batts%20-%20Beamer%20Tutorial.pdf&#34; target=&#34;_blank&#34;&gt;Tutorial on making slideshows with beamer&lt;/a&gt; with pauses between slides!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;blogs-and-feeds-i-follow&#34;&gt;Blogs and feeds I follow 📝&lt;/h2&gt;
-
-&lt;h3 id=&#34;data-science&#34;&gt;Data science&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#rstats on twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/hadleywickham&#34; target=&#34;_blank&#34;&gt;Hadley Wickham&amp;rsquo;s twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org&#34; target=&#34;_blank&#34;&gt;David Robinson&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://andrewgelman.com&#34; target=&#34;_blank&#34;&gt;Andrew Gelman&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://errorstatistics.com&#34; target=&#34;_blank&#34;&gt;Deborah Mayo&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;R styleguides
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://google.github.io/styleguide/Rguide.xml&#34; target=&#34;_blank&#34;&gt;Google&amp;rsquo;s R styleguide&lt;/a&gt;: Good enough for most cases.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://style.tidyverse.org&#34; target=&#34;_blank&#34;&gt;The tidyverse style guide&lt;/a&gt;: Based on Google&amp;rsquo;s styleguide, this goes a bit more in depth.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Progress bars
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/utils/html/txtProgressBar.html&#34; target=&#34;_blank&#34;&gt;Base R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dplyr.tidyverse.org/reference/progress_estimated.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;dplyr::progress_estimated()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gallery.rcpp.org/articles/using-rcppprogress/&#34; target=&#34;_blank&#34;&gt;Progress bars in &lt;code&gt;Rcpp&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source&#34; target=&#34;_blank&#34;&gt;Install an R library from source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;all-about-emoji&#34;&gt;All about emoji 😍&lt;/h2&gt;
-
-&lt;p&gt;Anyone who knows me knows how much I ❤️ emoji ☺️&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://emojipedia.org&#34; target=&#34;_blank&#34;&gt;Emojipedia&lt;/a&gt;: Check how your selected emoji will look cross-platform, and even look at how particular emoji have evolved over time&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.webpagefx.com/tools/emoji-cheat-sheet/&#34; target=&#34;_blank&#34;&gt;Use emojis for GitHub (on several other online platforms)&lt;/a&gt;: Sadly, not completely up to date&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecjacobson/coloremoji.sty&#34; target=&#34;_blank&#34;&gt;Using emoji in LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/eosrei/twemoji-color-font&#34; target=&#34;_blank&#34;&gt;Installing color emoji in Linux&lt;/a&gt;: Installs &lt;a href=&#34;https://emojipedia.org/twitter/&#34; target=&#34;_blank&#34;&gt;twemoji&lt;/a&gt;, from the Twitter platform (which happens to be my favorite set of emoji)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;for-fun&#34;&gt;For fun&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YHVarQbNAwU&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;My Favorite Things&amp;rdquo; by John Coltrane&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hierarchical nonparametric regression</title>
-      <link>/project/hgp/</link>
-      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/hgp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>E. coli &#39;omics</title>
-      <link>/project/sds385-final/</link>
-      <pubDate>Sat, 05 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/project/sds385-final/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My favorite things</title>
-      <link>/project/my-favorite-things/</link>
-      <pubDate>Sat, 15 Jan 2011 00:00:00 +0000</pubDate>
-      
-      <guid>/project/my-favorite-things/</guid>
-      <description></description>
+      <guid>/software/</guid>
+      <description>tidymsi Efficient preprocessing for mass spectrometry imaging data</description>
     </item>
     
   </channel>

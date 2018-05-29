@@ -1,252 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-    
-      <loc>/post/spatial-logit/</loc>
-      <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/post/2018/05/29/what-im-up-to-this-summer/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/post/hgp/</loc>
-      <lastmod>2018-01-30T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/post/2018-01-28-hello-world/</loc>
-      <lastmod>2018-01-28T00:00:00-06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00-06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/papers/</loc>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/project/spatial-logit/</loc>
-      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/software/</loc>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>/post/-my-favorite-things/</loc>
-      <lastmod>2018-01-28T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/hgp/</loc>
-      <lastmod>2016-04-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/sds385-final/</loc>
-      <lastmod>2015-12-05T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/my-favorite-things/</loc>
-      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/data-analysis/</loc>
-      <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/learning-resources/</loc>
-      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/meta/</loc>
-      <lastmod>2018-01-28T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/meta/</loc>
-      <lastmod>2018-01-28T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/nonparametrics/</loc>
-      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/omics/</loc>
-      <lastmod>2016-04-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/project/</loc>
-      <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/rstats/</loc>
-      <lastmod>2011-01-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/spatial-statistics/</loc>
-      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/wip/</loc>
-      <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
   
 </urlset>
