@@ -12,12 +12,19 @@
     
     
     <item>
-      <title>What I&#39;m up to this summer</title>
-      <link>/post/2018/05/29/what-im-up-to-this-summer/</link>
+      <title>What I&#39;m doing this summer</title>
+      <link>/post/2018/05/29/what-im-doing-this-summer/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018/05/29/what-im-up-to-this-summer/</guid>
-      <description> Work I&amp;rsquo;m doing  Collaborating with Sandia National Labs on Bayesian model calibration and uncertainty quantification Original post-selection inference, for application to sparse normal means problem and spatial hotspot detection  Conferences I am attending  May 21 - 23, Atlantic Causal Inference Conference, Carnegie Melon University, Pittsburgh, PA June 24 - 29, ISBA World Meeting 2018, University of Edinburgh  </description>
+      <guid>/post/2018/05/29/what-im-doing-this-summer/</guid>
+      <description>Work I&amp;rsquo;m doing  Collaborating with Sandia National Labs on Bayesian model calibration and uncertainty quantification under model misspecification Original research on post-selection inference, for application to sparse normal means problem and spatial hotspot detection  Conferences I am attending ACIC Atlantic Causal Inference Conference
+May 21 - 23, 2018
+Carnegie Melon University
+Pittsburgh, PA
+ISBA ISBA World Meeting 2018
+June 24 - 29, 2018
+University of Edinburgh
+United Kingdom</description>
     </item>
     
     <item>
@@ -36,6 +43,15 @@
       
       <guid>/software/</guid>
       <description>tidymsi Efficient preprocessing for mass spectrometry imaging data</description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/</guid>
+      <description> 2018-06-28: ISBA 2018, University of Edinburgh, United Kingdom. Bayes-optimal post-selection inference in spatial modeling.  </description>
     </item>
     
   </channel>
