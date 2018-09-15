@@ -5,7 +5,6 @@ body {
   line-height: 1.5em;
 }
 
-/* Hyperlink colors */
 a:link {color: #1564B2; text-decoration: none}
 a:visited {color: #1564B2; text-decoration: none}
 a:active {color: #1564B2; text-decoration: none}
