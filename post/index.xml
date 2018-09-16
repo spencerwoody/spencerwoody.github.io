@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Spencer Woody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UQ Mini Workshop</title>
+      <link>/post/2018/09/15/uq-mini-workshop/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/09/15/uq-mini-workshop/</guid>
+      <description>This summer I was lucky enough to collaborate with Lauren Hund from Sandia National Laboratories on some work related to uncertainty quantification (UQ) and Bayesian model calibration. We worked together to extend ideas on power likelihood methods to a model calibration problem originally published earler this year in JRSS C. Novin Ghaffari, another PhD student at UT, also worked with Lauren, though Novin worked on a problem of combining subset posteriors and so his work did not intersect much with mine.</description>
+    </item>
     
     <item>
       <title>What I&#39;m doing this summer</title>
