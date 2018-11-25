@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Spencer Woody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My PhD oral exam</title>
+      <link>/post/2018/11/25/my-phd-oral-exam/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/11/25/my-phd-oral-exam/</guid>
+      <description>I recently gave to a talk which counted as my oral examination to officially enter candidacy. This talk mostly concerned work on post-selection inference that I&amp;rsquo;ve completed with my advisor James Scott, but it also briefly introduced some ongoing work concerning posterior summarization.
+My committee members are:
+ Professor James Scott (advisor) Professor Carlos Carvalho Professor Jared Murray Professor Cory Zigler  Slides from my talk are available here.</description>
+    </item>
     
     <item>
       <title>UQ Mini Workshop</title>
