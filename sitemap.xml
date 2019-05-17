@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/2018/11/25/my-phd-oral-exam/</loc>
     <lastmod>2018-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -23,18 +34,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/papers/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-11-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
