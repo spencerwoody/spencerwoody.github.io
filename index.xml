@@ -73,7 +73,10 @@ United Kingdom</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/talks/</guid>
-      <description> 2019-05-22
+      <description>2019-10-11
+SDS Seminar, University of Texas at Austin
+Model Interpretation through Posterior Summarization
+ 2019-05-22
 ACIC 2019, McGill University, Montreal, Canada
 Posterior Summarization for the Causal Linear Model (poster)
  2018-11-13
@@ -83,9 +86,7 @@ Bayes-optimal post-selection inference; posterior summarization
 UQ Mini Workshop, University of Texas at Austin
 Bayesian model calibration using preposterior generalized cross-validation
  2018-06-28
-ISBA 2018, University of Edinburgh, United Kingdom
-Bayes-optimal post-selection inference in spatial modeling
-  </description>
+ISBA 2018, University of Edinburgh, United Kingdom</description>
     </item>
     
   </channel>
