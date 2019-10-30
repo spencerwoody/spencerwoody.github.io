@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Spencer Woody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Making nice maps</title>
+      <link>/post/2019/10/30/making-nice-maps/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019/10/30/making-nice-maps/</guid>
+      <description>library(sf) ## Linking to GEOS 3.7.1, GDAL 2.4.0, PROJ 5.2.0 library(ggplot2) library(cowplot) ## ## ******************************************************** ## Note: As of version 1.0.0, cowplot does not change the ## default ggplot2 theme anymore. To recover the previous ## behavior, execute: ## theme_set(theme_cowplot()) ## ******************************************************** theme_set(theme_half_open()) library(tidycensus) library(sf) library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union library(tigris) ## To enable ## caching of data, set `options(tigris_use_cache = TRUE)` in your R script or .</description>
+    </item>
     
     <item>
       <title>My PhD oral exam</title>
