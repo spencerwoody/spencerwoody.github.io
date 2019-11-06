@@ -23,55 +23,44 @@
       
       <li><a href="/#contact">Contact</a></li>
       
+      <li><a href="/files/spencerwoody-cv.pdf">CV</a></li>
+      
     </ul>
     <hr/>
     </nav>
 
 <div class="article-meta">
 <h1><span class="title">Making nice maps</span></h1>
-
+<h2 class="author">Spencer Woody</h2>
 <h2 class="date">2019/10/30</h2>
 </div>
 
 <main>
 
 
+<h1 id="structure-of-workflow">Structure of workflow</h1>
 
-<pre class="r"><code>library(sf)</code></pre>
-<pre><code>## Linking to GEOS 3.7.1, GDAL 2.4.0, PROJ 5.2.0</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(cowplot)</code></pre>
-<pre><code>## 
-## ********************************************************</code></pre>
-<pre><code>## Note: As of version 1.0.0, cowplot does not change the</code></pre>
-<pre><code>##   default ggplot2 theme anymore. To recover the previous</code></pre>
-<pre><code>##   behavior, execute:
-##   theme_set(theme_cowplot())</code></pre>
-<pre><code>## ********************************************************</code></pre>
-<pre class="r"><code>theme_set(theme_half_open())
+<ol>
+<li>Get ACS study via <a href="https://walkerke.github.io/tidycensus/"><code>tidycensus</code></a>, which gives <code>sf</code> spatial objects, each with data annotation</li>
+<li>Get geographic layers via <a href="https://tarakc02.github.io/rmapzen/"><code>rmapzen</code></a></li>
+<li>Convert geographic layes to <code>sf</code> objects using the <a href="https://r-spatial.github.io/sf/"><code>sf</code></a> package</li>
+<li>Use <a href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a> for vizualization.</li>
+</ol>
+
+<p>Much of this workflow has been taken from a <a href="https://www.dshkol.com/2018/better-maps-with-vector-tiles/">post by Dmitri Shkolnik</a>.</p>
+
+<pre><code class="language-r">library(sf)
+library(ggplot2)
+library(cowplot)
+theme_set(theme_half_open())
 
 library(tidycensus)
 library(sf)
-library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(tigris)</code></pre>
-<pre><code>## To enable 
-## caching of data, set `options(tigris_use_cache = TRUE)` in your R script or .Rprofile.</code></pre>
-<pre><code>## 
-## Attaching package: &#39;tigris&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:graphics&#39;:
-## 
-##     plot</code></pre>
-<pre class="r"><code>library(rmapzen)
+library(dplyr)
+library(tigris)
+library(rmapzen)
 
-## You need API keys (Census &amp; mapzen) to use these packages.  Don&#39;t
+## You need API keys (Census &amp; mapzen) to use these packages.  Don't
 ## use mine though.
 
 ## Get Census API here
@@ -80,11 +69,8 @@ library(dplyr)</code></pre>
 ## Get mapzen API here
 ## https://developers.nextzen.org/
 
-census_api_key(&quot;3deb7c3e77d1747cf53071c077e276d05aa31407&quot;, install = TRUE, overwrite = TRUE)</code></pre>
-<pre><code>## Your original .Renviron will be backed up and stored in your R HOME directory if needed.</code></pre>
-<pre><code>## Your API key has been stored in your .Renviron and can be accessed by Sys.getenv(&quot;CENSUS_API_KEY&quot;). 
-## To use now, restart R or run `readRenviron(&quot;~/.Renviron&quot;)`</code></pre>
-<pre class="r"><code>mz_set_tile_host_nextzen(key = (&quot;hxNDKuWbRgetjkLAf_7MUQ&quot;))
+## census_api_key(&quot;3deb7c3e77d1747cf53071c077e276d05aa31407&quot;, install = TRUE, overwrite = TRUE)
+mz_set_tile_host_nextzen(key = (&quot;hxNDKuWbRgetjkLAf_7MUQ&quot;))
 
 ## Function for getting map tiles. This, and a lot of other stuff is from:
 ## https://www.dshkol.com/2018/better-maps-with-vector-tiles/
@@ -98,17 +84,18 @@ get_vector_tiles &lt;- function(bbox){
 ###############################################################################
 
 ## Income (ACS column B19013_001) &amp; geometry for whole state
-txstateincome &lt;- get_acs(state = &quot;TX&quot;, geography = &quot;state&quot;, geometry = TRUE,
-                         variables = &quot;B19013_001&quot;)</code></pre>
-<pre><code>## Getting data from the 2013-2017 5-year ACS</code></pre>
-<pre><code>## Downloading feature geometry from the Census website.  To cache shapefiles for use in future sessions, set `options(tigris_use_cache = TRUE)`.</code></pre>
-<pre class="r"><code>## Income for state by county
-txcountyincome &lt;- get_acs(state = &quot;TX&quot;, geography = &quot;county&quot;, geometry = TRUE,
+# txstateincome &lt;- get_acs(state = &quot;TX&quot;, geography = &quot;state&quot;, geometry = TRUE,
+#                          variables = &quot;B19013_001&quot;)
+
+txstateincome &lt;- invisible(get_acs(state = &quot;TX&quot;, geography = &quot;state&quot;, geometry = TRUE,
+                         variables = &quot;B19013_001&quot;))
+
+## Income for state by county
+txcountyincome &lt;- invisible(get_acs(state = &quot;TX&quot;, geography = &quot;county&quot;, geometry = TRUE,
                           variables = &quot;B19013_001&quot;) %&gt;%
-  arrange(desc(estimate))</code></pre>
-<pre><code>## Getting data from the 2013-2017 5-year ACS
-## Downloading feature geometry from the Census website.  To cache shapefiles for use in future sessions, set `options(tigris_use_cache = TRUE)`.</code></pre>
-<pre class="r"><code>## You can see that we have the shape file (column &quot;geometry&quot;) and
+  arrange(desc(estimate)))
+
+## You can see that we have the shape file (column &quot;geometry&quot;) and
 ## income (column &quot;estimate&quot;) for each county
 txcountyincome %&gt;% glimpse()
 
@@ -118,11 +105,14 @@ incomeMap &lt;- ggplot(txcountyincome) +
   geom_sf(aes(fill = estimate / 1000), size = 0.1, alpha = 0.8) +
   scale_fill_viridis_c(&quot;Median household income ($1000)&quot;) +
   theme(legend.position = &quot;top&quot;) +
-  guides(fill = guide_colorbar(barwidth = 15, barheight = 0.5))
+  guides(fill = guide_colorbar(barwidth = 10, barheight = 0.5))
 
-incomeMap</code></pre>
-<p><img src="/post/2019-10-30-maps_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>###############################################################################
+incomeMap
+</code></pre>
+
+<p><img src="2019-10-30-maps_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+
+<pre><code class="language-r">###############################################################################
                                         #  Get geographic info (road &amp; water) #
 ############################################################################### 
 
@@ -140,9 +130,9 @@ tx_roads_alt &lt;- st_transform(tx_roads, 4269)
 
 txunion &lt;- st_union(txcountyincome$geometry)
 
-tx_roads_crop &lt;- st_intersection(tx_roads_alt, txstateincome)</code></pre>
-<pre><code>## although coordinates are longitude/latitude, st_intersection assumes that they are planar</code></pre>
-<pre class="r"><code>###############################################################################
+tx_roads_crop &lt;- st_intersection(tx_roads_alt, txstateincome)
+
+###############################################################################
                                         # Income plot with roads in background #
 ###############################################################################
 
@@ -153,10 +143,12 @@ incomeMapRoads &lt;- ggplot() +
   geom_sf(data = txcountyincome, aes(fill = estimate / 1000), size = 0.1, alpha = 0.85) +
   theme(legend.position = &quot;top&quot;) +
   scale_fill_viridis_c(&quot;Median household income ($1000)&quot;) +
-  guides(fill = guide_colorbar(barwidth = 15, barheight = 0.5))
+  guides(fill = guide_colorbar(barwidth = 10, barheight = 0.5))
 
-incomeMapRoads</code></pre>
-<p><img src="/post/2019-10-30-maps_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+incomeMapRoads
+</code></pre>
+
+<p><img src="2019-10-30-maps_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
 
 </main>
 
