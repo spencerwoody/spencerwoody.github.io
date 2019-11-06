@@ -17,17 +17,7 @@
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019/10/30/making-nice-maps/</guid>
-      <description>Structure of workflow  Get ACS study via tidycensus, which gives sf spatial objects, each with data annotation Get geographic layers via rmapzen Convert geographic layes to sf objects using the sf package Use ggplot2 for vizualization.  Much of this workflow has been taken from a post by Dmitri Shkolnik.
-library(sf) library(ggplot2) library(cowplot) theme_set(theme_half_open()) library(tidycensus) library(sf) library(dplyr) library(tigris) library(rmapzen) ## You need API keys (Census &amp;amp; mapzen) to use these packages.</description>
-    </item>
-    
-    <item>
-      <title>Making nice maps</title>
-      <link>/post/2019/10/30/making-nice-maps/</link>
-      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019/10/30/making-nice-maps/</guid>
-      <description>Structure of workflow  Get ACS study via tidycensus, which gives sf spatial objects, each with data annotation Get geographic layers via rmapzen Convert geographic layes to sf objects using the sf package Use ggplot2 for vizualization.  Much of this workflow has been taken from a post by Dmitri Shkolnik.
+      <description>Structure of workflow Get ACS study via tidycensus, which gives sf spatial objects, each with data annotation Get geographic layers via rmapzen Convert geographic layes to sf objects using the sf package Use ggplot2 for vizualization.  Much of this workflow has been taken from a post by Dmitri Shkolnik.
 library(sf) library(ggplot2) library(cowplot) theme_set(theme_half_open()) library(tidycensus) library(sf) library(dplyr) library(tigris) library(rmapzen) ## You need API keys (Census &amp;amp; mapzen) to use these packages.</description>
     </item>
     
@@ -65,15 +55,6 @@ ISBA ISBA World Meeting 2018
 June 24 - 29, 2018
 University of Edinburgh
 United Kingdom</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/1/01/01/</guid>
-      <description></description>
     </item>
     
     <item>

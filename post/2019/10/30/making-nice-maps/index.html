@@ -38,18 +38,17 @@
 <main>
 
 
-<h1 id="structure-of-workflow">Structure of workflow</h1>
 
-<ol>
+<div id="structure-of-workflow" class="section level1">
+<h1>Structure of workflow</h1>
+<ol style="list-style-type: decimal">
 <li>Get ACS study via <a href="https://walkerke.github.io/tidycensus/"><code>tidycensus</code></a>, which gives <code>sf</code> spatial objects, each with data annotation</li>
 <li>Get geographic layers via <a href="https://tarakc02.github.io/rmapzen/"><code>rmapzen</code></a></li>
 <li>Convert geographic layes to <code>sf</code> objects using the <a href="https://r-spatial.github.io/sf/"><code>sf</code></a> package</li>
 <li>Use <a href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a> for vizualization.</li>
 </ol>
-
 <p>Much of this workflow has been taken from a <a href="https://www.dshkol.com/2018/better-maps-with-vector-tiles/">post by Dmitri Shkolnik</a>.</p>
-
-<pre><code class="language-r">library(sf)
+<pre class="r"><code>library(sf)
 library(ggplot2)
 library(cowplot)
 theme_set(theme_half_open())
@@ -60,7 +59,7 @@ library(dplyr)
 library(tigris)
 library(rmapzen)
 
-## You need API keys (Census &amp; mapzen) to use these packages.  Don't
+## You need API keys (Census &amp; mapzen) to use these packages.  Don&#39;t
 ## use mine though.
 
 ## Get Census API here
@@ -107,12 +106,9 @@ incomeMap &lt;- ggplot(txcountyincome) +
   theme(legend.position = &quot;top&quot;) +
   guides(fill = guide_colorbar(barwidth = 10, barheight = 0.5))
 
-incomeMap
-</code></pre>
-
-<p><img src="2019-10-30-maps_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-
-<pre><code class="language-r">###############################################################################
+incomeMap</code></pre>
+<p><img src="/post/2019-10-30-maps_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>###############################################################################
                                         #  Get geographic info (road &amp; water) #
 ############################################################################### 
 
@@ -145,10 +141,9 @@ incomeMapRoads &lt;- ggplot() +
   scale_fill_viridis_c(&quot;Median household income ($1000)&quot;) +
   guides(fill = guide_colorbar(barwidth = 10, barheight = 0.5))
 
-incomeMapRoads
-</code></pre>
-
-<p><img src="2019-10-30-maps_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+incomeMapRoads</code></pre>
+<p><img src="/post/2019-10-30-maps_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+</div>
 
 </main>
 
