@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Spencer Woody</title>
@@ -63,9 +63,9 @@ United Kingdom</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/papers/</guid>
-      <description>Pre-prints and papers under review  Spencer Woody, Mauricio Garcia Tec, Maytal Dahan, Kelly Gaither, Spencer Fox, Lauren Ancel Meyers, and James G. Scott. “Projections for first-wave COVID-19 deaths across the US using social-distancing measures derived from mobile phones.” [medRxiv preprint].
- S. Woody, O.H.M Padilla and J.G. Scott. &amp;ldquo;Optimal post-selection inference for sparse signals: a nonparametric empirical-Bayes approach.&amp;rdquo; 2020. [arXiv preprint] [code].
- S. Woody, C.M. Carvalho and J.</description>
+      <description>Pre-prints and papers under review   Spencer Woody, Mauricio Garcia Tec, Maytal Dahan, Kelly Gaither, Spencer Fox, Lauren Ancel Meyers, and James G. Scott. “Projections for first-wave COVID-19 deaths across the US using social-distancing measures derived from mobile phones.” [medRxiv preprint].
+  S. Woody, O.H.M Padilla and J.G. Scott. &amp;ldquo;Optimal post-selection inference for sparse signals: a nonparametric empirical-Bayes approach.&amp;rdquo; 2020. [arXiv preprint] [code].
+  S. Woody, C.M. Carvalho and J.</description>
     </item>
     
     <item>
@@ -86,17 +86,15 @@ United Kingdom</description>
       <description>2020-04-30
 SDS 384 Causal Inference Methodology Final Project, University of Texas at Austin
 Matching methods for categorical and continuous treatments
- 2019-10-11
+  2019-10-11
 SDS Seminar, University of Texas at Austin
 Model Interpretation through Posterior Summarization
- 2019-05-22
+  2019-05-22
 ACIC 2019, McGill University, Montreal, Canada
 Posterior Summarization for the Causal Linear Model (poster)
- 2018-11-13
+  2018-11-13
 PhD oral examination, University of Texas at Austin
-Bayes-optimal post-selection inference; posterior summarization
- 2018-09-14
-UQ Mini Workshop, University of Texas at Austin</description>
+Bayes-optimal post-selection inference; posterior summarization</description>
     </item>
     
   </channel>
