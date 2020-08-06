@@ -82,19 +82,18 @@ United Kingdom</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/talks/</guid>
-      <description>2020-08-06
-JSM 2020 (virtual)
+      <description>2020-08-07
+Dissertation defense, University of Texas at Austin
+Bayesian approaches for inference after selection and model fitting
+  2020-08-06
+JSM 2020 (virtual) and SBIES 2020 (virtual)
 Estimating heterogeneous effects of continuous exposures with BART
   2020-04-30
 SDS 384 Causal Inference Methodology Final Project, University of Texas at Austin
 Matching methods for categorical and continuous treatments
   2019-10-11
 SDS Seminar, University of Texas at Austin
-Model Interpretation through Posterior Summarization
-  2019-05-22
-ACIC 2019, McGill University, Montreal, Canada
-Posterior Summarization for the Causal Linear Model (poster)
-  2018-11-13</description>
+Model Interpretation through Posterior Summarization</description>
     </item>
     
   </channel>
