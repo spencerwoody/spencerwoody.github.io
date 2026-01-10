@@ -1,0 +1,14 @@
+---
+title: ""
+---
+
+::: {.text-center}
+![](profile.jpg){.profile-img alt="Portrait of Spencer Woody"}
+:::
+
+::: {.text-center}
+Biostatistician by trade. Off-hours I build small, practical things with R and microcontrollers.  
+All views expressed here are my own. 
+:::
+
+

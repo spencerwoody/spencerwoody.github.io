@@ -1,0 +1,7 @@
+---
+title: "Lab Notes"
+---
+
+Work in progress...
+
+This page contains useful code snippets

@@ -1,0 +1,101 @@
+/*-- scss:defaults --*/
+  
+/* Fonts */
+$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+$font-family-serif: "EB Garamond", Georgia, serif;
+$font-family-base: $font-family-serif;
+
+/* Palette */
+$forest: #1F6F5C;
+$forest-dark: #164F42;
+$accent: #C38D2E;
+  
+$body-bg: #F7F8F6;
+$body-color: #1F2933;
+  
+$link-color: $forest;
+$link-hover-color: $forest-dark;
+
+/* Headings */
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+$headings-color: $forest-dark;
+
+/* Navbar */
+$navbar-bg: $forest-dark;
+$navbar-fg: #FFFFFF;
+$navbar-hl: $accent;
+
+/* Code */
+$code-bg: #F1F3F2;
+$code-color: #0F172A;
+  
+/*-- scss:rules --*/
+  
+/* Remove underline links */ 
+  
+a {
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+a { font-weight: 550; }
+ 
+/* Portrait properties */  
+  
+.profile-img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.profile-img { border: 1px solid rgba(0,0,0,0.10); }
+
+
+  
+/* .profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;     
+  border-radius: 9999px; 
+  border: 1px solid rgba(0,0,0,0.10);
+} */
+
+  
+.page-columns .content { max-width: 42rem; }
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.project-grid { margin-top: 1rem; }
+.project-card { height: 100%; }
+.project-kicker {
+  font-family: $headings-font-family;
+  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.project-meta { font-size: 0.9rem; opacity: 0.85; }
+
+.badge-tag {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-right: 0.35rem;
+  margin-top: 0.35rem;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(31, 111, 92, 0.06);
+}
+
+code {
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

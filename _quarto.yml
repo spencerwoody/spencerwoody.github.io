@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Spencer Woody"
+  favicon: ./assets/favicon32.png
+  navbar:
+    logo: ./assets/logo_gold.png
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      # - href: projects.qmd
+        # text: Projects
+      - href: ./files/spencerwoody-cv.pdf
+        text: CV
+
+format:
+  html:
+    toc: true
+    include-in-header: includes/header.html
+    smooth-scroll: true
+    highlight-style: atom-one
+    anchor-sections: true
+    link-external-newwindow: true
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark:  [darkly, theme-dark.scss]
+    css: styles.css
+    fontsize: 1.05em
+    linestretch: 1.6
+    grid:
+      body-width: 900px
+      sidebar-width: 260px
+      
+ 
+
+
+# project:
+#   type: website
+# 
+# website:
+#   title: "."
+#   navbar:
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - about.qmd
+# 
+# format:
+#   html:
+#     theme: cosmo
+#     css: styles.css
+#     toc: true
+# 
+# 
+# 

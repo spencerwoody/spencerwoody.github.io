@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Spencer Woody",
+    "section": "",
+    "text": "Biostatistician by trade. Off-hours I build small, practical things with R and microcontrollers.\nAll views expressed here are my own."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Work in progress…"
+  },
+  {
+    "objectID": "projects/index_template.html",
+    "href": "projects/index_template.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Note\n\n\n\nEverything here is personal work. I don’t post proprietary or internal company material."
+  },
+  {
+    "objectID": "projects/index_template.html#featured",
+    "href": "projects/index_template.html#featured",
+    "title": "Projects",
+    "section": "Featured",
+    "text": "Featured\n\n\n\n\n\nArduino · Indoor Air Quality Display\n\n\nE-ink IAQ dashboard\nA battery-friendly e-ink display that reports CO₂ / PM / temperature-humidity, with reliability-focused power sequencing and logging.\n\nArduino ESP32 E-ink Sensors WIP\n\n\nWhat I’m practicing: I²C/UART reliability, power budgeting, readable UI\nArtifacts: wiring diagram, firmware snippets, photos\nNext: data upload to home server; enclosure iteration\n\nRead the build notes\n\n\n\n\n\n\n\n\nR · Baseball Analytics\n\n\n“Would this homer leave your park?”\nA park-translation experiment: take a home-run trajectory and test it against other stadium geometries; visualize on a stylized field overlay.\n\nR Data Viz Sports Prototype\n\n\nWhat I’m practicing: geometry, visualization, reproducible pipelines\nArtifacts: figures, notebooks, links to datasets\n\nSee the notebook"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "cards.html",
+    "href": "cards.html",
+    "title": "Spencer Woody",
+    "section": "",
+    "text": "Arduino · Indoor Air Quality\n\n\nE-ink weather + IAQ display\nCO₂ / PM / temperature-humidity on an e-ink dashboard, optimized for stable sensor reads and clean visual design.\n\nESP32 E-ink Sensors WIP\n\nRead the build notes\n\n\n\n\n\n\n\n\nR · Baseball\n\n\nIntro analysis of baseball stats\nA gentle ramp into modern baseball analytics with reproducible plots, plus a few “why this metric exists” explanations.\n\nR Data viz Learning\n\nSee the analysis"
+  },
+  {
+    "objectID": "labnotes/index.html",
+    "href": "labnotes/index.html",
+    "title": "Lab Notes",
+    "section": "",
+    "text": "Work in progress…\nThis page contains useful code snippets"
+  }
+]

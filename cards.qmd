@@ -1,0 +1,46 @@
+
+::: {.grid .project-grid}
+::: {.g-col-12 .g-col-md-6}
+
+::: {.card .project-card}
+::: {.card-body}
+<div class="project-kicker">Arduino · Indoor Air Quality</div>
+
+### E-ink weather + IAQ display
+
+CO₂ / PM / temperature-humidity on an e-ink dashboard, optimized for stable sensor reads and clean visual design.
+
+<div class="project-meta">
+<span class="badge-tag">ESP32</span>
+<span class="badge-tag">E-ink</span>
+<span class="badge-tag">Sensors</span>
+<span class="badge-tag">WIP</span>
+</div>
+
+[Read the build notes](projects/iaq-display.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+::: {.card .project-card}
+::: {.card-body}
+<div class="project-kicker">R · Baseball</div>
+
+### Intro analysis of baseball stats
+
+A gentle ramp into modern baseball analytics with reproducible plots, plus a few “why this metric exists” explanations.
+
+<div class="project-meta">
+<span class="badge-tag">R</span>
+<span class="badge-tag">Data viz</span>
+<span class="badge-tag">Learning</span>
+</div>
+
+[See the analysis](projects/baseball-intro.qmd)
+:::
+:::
+:::
+
+:::

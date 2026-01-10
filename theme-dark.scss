@@ -1,0 +1,109 @@
+/*-- scss:defaults --*/
+
+/* Fonts */
+$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+$font-family-serif: "EB Garamond", Georgia, serif;
+$font-family-base: $font-family-serif;
+
+/* Palette (dark) */
+$forest: #58B59E;        // lifted forest for links on dark bg
+$forest-dark: #1B6B59;   // used sparingly
+$accent: #E0B35A;        // warmer accent in dark mode
+
+$body-bg: #0F1513;       // deep green-black
+$body-color: #E7ECEA;    // soft near-white
+
+$link-color: $forest;
+$link-hover-color: #7ED6C0;
+
+/* Headings */
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+$headings-color: #DDE6E2;
+
+/* Navbar */
+$navbar-bg: #0B100E;
+$navbar-fg: #E7ECEA;
+$navbar-hl: $accent;
+
+/* Code */
+$code-bg: #121B18;
+$code-color: #E7ECEA;
+
+/*-- scss:rules --*/
+
+  
+a {
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+a { font-weight: 550; }
+ 
+/* Portrait properties */  
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.profile-img { border: 1px solid rgba(255,255,255,0.14); }
+
+
+.page-columns .content { max-width: 42rem; }
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-grid { margin-top: 1rem; }
+.project-card { height: 100%; }
+.project-kicker {
+  font-family: $headings-font-family;
+  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.project-meta { font-size: 0.9rem; opacity: 0.9; }
+
+.badge-tag {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-right: 0.35rem;
+  margin-top: 0.35rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(88, 181, 158, 0.10);
+}
+
+code {
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+
+
+/* Cards */ 
+
+.project-grid { margin-top: 1rem; }
+.project-card { height: 100%; }
+.project-kicker { font-family: $headings-font-family; letter-spacing: 0.02em; font-size: 0.9rem; opacity: 0.85; }
+.project-meta { font-size: 0.9rem; opacity: 0.85; }
+.badge-tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-right: 0.35rem;
+  border: 1px solid rgba(0,0,0,0.10);
+}
+

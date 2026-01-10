@@ -1,0 +1,65 @@
+---
+title: "Projects"
+subtitle: "Mostly hobbies. Always learning. Occasionally finishing."
+---
+
+::: {.callout-note}
+Everything here is personal work. I don’t post proprietary or internal company material.
+:::
+
+## Featured
+
+::: {.grid .project-grid}
+::: {.g-col-12 .g-col-md-6}
+
+::: {.card .project-card}
+::: {.card-body}
+<div class="project-kicker">Arduino · Indoor Air Quality Display</div>
+
+### [E-ink IAQ dashboard](https://spencerwoody.github.io/)
+
+A battery-friendly e-ink display that reports CO₂ / PM / temperature-humidity, with reliability-focused power sequencing and logging.
+
+<div class="project-meta">
+<span class="badge-tag">Arduino</span>
+<span class="badge-tag">ESP32</span>
+<span class="badge-tag">E-ink</span>
+<span class="badge-tag">Sensors</span>
+<span class="badge-tag">WIP</span>
+</div>
+
+- **What I’m practicing:** I²C/UART reliability, power budgeting, readable UI
+- **Artifacts:** wiring diagram, firmware snippets, photos
+- **Next:** data upload to home server; enclosure iteration
+
+[Read the build notes](projects/iaq-display.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+::: {.card .project-card}
+::: {.card-body}
+<div class="project-kicker">R · Baseball Analytics</div>
+
+### “Would this homer leave *your* park?”
+
+A park-translation experiment: take a home-run trajectory and test it against other stadium geometries; visualize on a stylized field overlay.
+
+<div class="project-meta">
+<span class="badge-tag">R</span>
+<span class="badge-tag">Data Viz</span>
+<span class="badge-tag">Sports</span>
+<span class="badge-tag">Prototype</span>
+</div>
+
+- **What I’m practicing:** geometry, visualization, reproducible pipelines
+- **Artifacts:** figures, notebooks, links to datasets
+
+[See the notebook](projects/park-translation.qmd)
+:::
+:::
+:::
+
+:::
