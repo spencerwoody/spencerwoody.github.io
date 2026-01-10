@@ -7,7 +7,7 @@ title: ""
 :::
 
 ::: {.text-center}
-Biostatistician by trade. Off-hours I build small, practical things with R and microcontrollers.  
+Biostatistician by trade. Off-hours I build practical projects using R and microcontrollers.  
 All views expressed here are my own. 
 :::
 
