@@ -12,14 +12,18 @@ website:
         text: Home
       - href: projects/index.qmd
         text: Projects
+      - href: labnotes/index.qmd
+        text: Lab Notes
       # - href: projects.qmd
         # text: Projects
+      - href: research.qmd
+        text: Research
       - href: ./files/spencerwoody-cv.pdf
         text: CV
 
 format:
   html:
-    toc: true
+    toc: false
     include-in-header: includes/header.html
     smooth-scroll: true
     highlight-style: atom-one
