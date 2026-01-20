@@ -5,3 +5,7 @@ title: "Lab Notes"
 Work in progress...
 
 This page contains useful code snippets
+
+# Links
+
+- FDA. Draft Guidance for Industry. "Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products." Jan 2026. [FDA.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/use-bayesian-methodology-clinical-trials-drug-and-biological-products) [Archived.](https://web.archive.org/web/20260112174225/https://www.fda.gov/regulatory-information/search-fda-guidance-documents/use-bayesian-methodology-clinical-trials-drug-and-biological-products)
